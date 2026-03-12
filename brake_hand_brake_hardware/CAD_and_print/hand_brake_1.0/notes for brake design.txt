@@ -1,0 +1,1 @@
+Please note that in the original Inventor load_cell_flange.ipt the M10x1 thread is not modelled, because Inventor can't do it easily. That's why the model has been imported to Fusion to create the version load_cell_flange_printable v1.step which has a modelled thread which can be printed.

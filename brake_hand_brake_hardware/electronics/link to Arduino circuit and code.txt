@@ -1,0 +1,1 @@
+The circuit to connect the load cell to the Arduino is based on this design: https://edg.uchicago.edu/tutorials/load_cell/
