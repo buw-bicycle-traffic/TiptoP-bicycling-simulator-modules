@@ -17,3 +17,13 @@ Currently, documentation for following modules is available on this repository:
 | **steering angle sensor**               | handlebar steering   | [handlebar_steering_steering_angle_hardware](https://github.com/buw-bicycle-traffic/TiptoP-bicycling-simulator-modules/tree/main/handlebar_steering_steering_angle_hardware) | Full assembly holding a bicycle handlebar and measuring its steer angle using an absolute rotary encoder.                           |
 | **hand brake sensor**                   | brake                | [brake_hand_brake_hardware](https://github.com/buw-bicycle-traffic/TiptoP-bicycling-simulator-modules/tree/main/brake_hand_brake_hardware)                  | Brake lever assembly converting the manual brake force to an electronic output signal using a load cell.                            |
 | **how-to create environments in CARLA** | environment          | CARLA_how_to_create_environments           | Documentation describing how to create virtual environments for bicycling simulators with CARLA will be added soon.                                    |
+
+## Licensing
+
+### Software
+The software in this repository is licensed under the **GNU General Public License v3 (GPLv3)**.
+See [LICENSE_SOFTWARE](LICENSE_SOFTWARE) for details.
+
+### Hardware
+The hardware designs in this repository are licensed under the **CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN OHL-S)**.
+See [LICENSE_HARDWARE](LICENSE_HARDWARE) for details.
