@@ -1,0 +1,11 @@
+# Ignore the '.obsidian' folder
+.obsidian/
+
+# Ignore the 'CARLA_how_to_create_environments' folder
+CARLA_how_to_create_environments/
+
+# Ignore the 'archive' folder
+archive/
+
+
+
