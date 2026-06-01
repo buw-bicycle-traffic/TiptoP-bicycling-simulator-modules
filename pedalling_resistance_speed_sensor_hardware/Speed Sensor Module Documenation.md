@@ -42,7 +42,7 @@ This documentation presents an open-source speed measuring module developed for 
 
 
 <a id="Figure_3"></a>
-![Figure_3](Images/Figure_3_Speed_Sensor_Signal_Transmission.png)
+![Figure_3](images/Figure_3_Speed_Sensor_Signal_Transmission.png)
 *Figure 3 Speed sensor signal transmission and processing*
 
 Note: The steering sensor is shown above ([Figure 3](#Figure_3)) is for representation of the simulator system. However, there lies a separate documentation for steering which holds the same structure of presentation as the speed sensor.
@@ -64,7 +64,7 @@ This seamless hardware to software loop enables real time monitoring of the bicy
 ## Speed Sensor Wiring to Arduino 
 
 <a id="Figure_4"></a>
-![Figure_4](Images/Figure_4_Electrical_Integration_Speed_Sensor_Wiring.png)
+![Figure_4](images/Figure_4_Electrical_Integration_Speed_Sensor_Wiring.png)
 *Figure 4 Electrical integration - Speed Sensor Wiring Connection to Arduino*
 
  **Table 1 Speed Sensor Wiring**
@@ -78,7 +78,7 @@ This seamless hardware to software loop enables real time monitoring of the bicy
 | 5            | D3 (INT1)         |
 
 <a id="Figure_5"></a>
-![Figure_5](Images/Figure_5_Speed_Sensor_Wiring_Connection.png)
+![Figure_5](images/Figure_5_Speed_Sensor_Wiring_Connection.png)
 *Figure 5 Speed Sensor Wiring connection through Arduino to simulator software*
 ### Connection Overview and Hardware
 The diagram above illustrates how the speed sensor module is connected to the Arduino Uno to enable rotational speed measurementon the Kickr Bike. Each pin on the sensor corresponds to a specific function and is wired directly to a compatible Arduino pin: **Power Supply (5 V & GND)** - The sensor is powered through the Arduino's 5 V and GND pins, connected to encoder wires **4** and **1** respectively. **Signal Pins (Channel A & B)** - Encoder wires **3** and **5** are used for signal transmission. They are connected to Arduino digital pins **D2 (INT0)** and **D3 (INT1)**, enabling the detection of rising/falling signal edges.
