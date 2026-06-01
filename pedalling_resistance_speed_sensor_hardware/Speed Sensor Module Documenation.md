@@ -88,13 +88,13 @@ This setup allows the Arduino to count encoder pulses and calculate speed using 
 
 
 <a id="Figure_6"></a>
-![Figure_6](Images/Figure_6_Assembly_Speed_Sensor.png)
+![Figure_6](images/Figure_6_Assembly_Speed_Sensor.png)
 *Figure 6 Assembled View of the Speed Sensor
 <a id="Figure_7"></a>
-![Figure_7](Images/Figure_7_Exploded_View_Speed_Sensor.png)
+![Figure_7](images/Figure_7_Exploded_View_Speed_Sensor.png)
 *Figure  7 Exploded View of the Speed Sensor*
 <a id="Figure_8"></a>
-![Figure_8](Images/Figure_8_Assembly_Drawing_Speed_Sensor.png)
+![Figure_8](images/Figure_8_Assembly_Drawing_Speed_Sensor.png)
 *Figure  8 Assembly Drawing of the Speed Sensor*
 
 **Table 2 Bill of Materials (BOM)**
@@ -224,7 +224,7 @@ Additional Recommendations:
 - Tolerance Fit: It is recommended to maintain ±0.05 mm tolerance for critical bore fits, especially for bearing seats and shaft passages.
 
 <a id="Figure_9"></a>
-![Figure_9](Images/Figure_9_Prusa_G-code_Viewer_Speed.png)
+![Figure_9](images/Figure_9_Prusa_G-code_Viewer_Speed.png)
 *Figure 9 Screenshot Prusa G-code Viewer*
 
 The screenshot ([Figure 9](#Figure_9)) from Prusa G-code Viewer shows the exact layout and orientation of all parts on the printer tray during printing. This is critical for:
