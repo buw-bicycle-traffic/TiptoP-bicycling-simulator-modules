@@ -27,3 +27,6 @@ See [LICENSE_SOFTWARE](LICENSE_SOFTWARE) for details.
 ### Hardware
 The hardware designs in this repository are licensed under the **CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN OHL-S)**.
 See [LICENSE_HARDWARE](LICENSE_HARDWARE) for details.
+
+
+# Test segment
