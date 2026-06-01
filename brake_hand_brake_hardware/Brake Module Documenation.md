@@ -31,15 +31,15 @@ This brake module is designed for **direct mounting onto standard bicycle handle
 <a id="Figure_2"></a> ![Figure_2](images/Figure_2_Brake_Module.png)
 *Figure 2 Brake Module for installation on an off-the-shelf bicycle handle bar*
 
-<a id="Figure_3"></a> ![Figure_3](Images/Figure_3_Brake_Module_Signal_Processing.png)
+<a id="Figure_3"></a> ![Figure_3](images/Figure_3_Brake_Module_Signal_Processing.png)
 *Figure 3 Brake Module signal transmission and processing*
 
 ## Brake Modul Wiring and Arduino Code
 For the electronic implementation with an Arduino Uno we followed the documentation ["Working with a Load Cell and an Arduino"](https://edg.uchicago.edu/tutorials/load_cell/) published by the University of Chicago. Please refer to this document for all details on the wiring and Arduino code. 
 ## Assembly Drawing and Bill of Materials (BOM)
 Below [Figure 4](Figure_4) shows the assembly drawing of the brake sensor without the brake lever while [Figure 5](Figure_5) shows the exploded view and BOM for the complete assembly with a demonstrative brake lever dummy similar to the model we used. 
-<a id="Figure_4"></a> ![Figure_4](Images/Figure_4_brake_assembled_view.png)*Figure 4 Brake Module Assembly Drawing*
-<a id="Figure_5"></a> ![Figure_5](Images/Figure_5_brake_exploded_view.png)*Figure 5 Brake Module Exploded View Drawing with Part List*
+<a id="Figure_4"></a> ![Figure_4](images/Figure_4_brake_assembled_view.png)*Figure 4 Brake Module Assembly Drawing*
+<a id="Figure_5"></a> ![Figure_5](images/Figure_5_brake_exploded_view.png)*Figure 5 Brake Module Exploded View Drawing with Part List*
   
 **Table 2 Bill of Materials (BOM)**
 
