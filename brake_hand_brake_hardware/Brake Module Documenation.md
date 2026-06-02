@@ -28,7 +28,8 @@ This brake module is designed for **direct mounting onto standard bicycle handle
 
 [Figure 2](#Figure_2) shows the complete brake module with a three-core ribbon cable to be connected to the Arduino. The signal processing chain is shown in [Figure 3](#Figure_3)
 
-<a id="Figure_2"></a> 
+<div id="Figure_2"></div>
+
 ![Figure_2](images/Figure_2_Brake_Module.png)
 *Figure 2 Brake Module for installation on an off-the-shelf bicycle handle bar*
 <a id="Figure_3"></a> ![Figure_3](images/Figure_3_Brake_Module_Signal_Processing.png)*Figure 3 Brake Module signal transmission and processing*
