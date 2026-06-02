@@ -27,14 +27,8 @@ This brake module is designed for **direct mounting onto standard bicycle handle
 - **Pressure sensing**: A **miniature load cell** embedded in the module measures applied brake pressure. The signal is **amplified**, digitised by an **Arduino**, and transmitted to the simulation computer via **UDP**.
 
 [Figure 2](#Figure_2) shows the complete brake module with a three-core ribbon cable to be connected to the Arduino. The signal processing chain is shown in [Figure 3](#Figure_3)
-
-<a id="Figure_2"></a>
-![Figure_2](images/Figure_2_Brake_Module.png)
-*Figure 2 Brake Module for installation on an off-the-shelf bicycle handle bar*
-
-<a id="Figure_3"></a>
-![Figure_3](images/Figure_3_Brake_Module_Signal_Processing.png)
-*Figure 3 Brake Module signal transmission and processing*
+<a id="Figure_2"></a> ![Figure_2](images/Figure_2_Brake_Module.png)*Figure 2 Brake Module for installation on an off-the-shelf bicycle handle bar*
+<a id="Figure_3"></a> ![Figure_3](images/Figure_3_Brake_Module_Signal_Processing.png)*Figure 3 Brake Module signal transmission and processing*
 
 ## Brake Modul Wiring and Arduino Code
 For the electronic implementation with an Arduino Uno we followed the documentation ["Working with a Load Cell and an Arduino"](https://edg.uchicago.edu/tutorials/load_cell/) published by the University of Chicago. Please refer to this document for all details on the wiring and Arduino code. 
@@ -90,9 +84,7 @@ Additional Recommendations:
 - Post-processing: After printing, components were deburred and cleaned to remove any support material and residual brim structures. This ensures tight fits between bearings, shafts, and sensor housings.
 - Tolerance Fit: It is recommended to maintain ±0.05 mm tolerance for critical bore fits, especially for bearing seats and shaft passages.
 
-<a id="Figure_6"></a>
-![A screen shot of the Prusa Slicer software showing the sliced parts on the print tray of a Prusa i3 MK3 printer.](images/Figure_6_Prusa_G-code_Viewer_Brake.png)
-*Figure 6 Screen shot Prusa G-code Viewer*
+<a id="Figure_6"></a> ![A screen shot of the Prusa Slicer software showing the sliced parts on the print tray of a Prusa i3 MK3 printer.](images/Figure_6_Prusa_G-code_Viewer_Brake.png)*Figure 6 Screen shot Prusa G-code Viewer*
 
 The screenshot ([Figure 6](#Figure_6)) from Prusa G-code Viewer shows the exact layout and orientation of all parts on the printer tray during printing. This is critical for:
 - Ensuring flat-base printing and stable adhesion to the build plate
@@ -140,9 +132,7 @@ The `circuit board (10)` is used to hold the `amplifier (11)` and connect it to 
 8. Push the `circuit board (10)` into the seat inside the `circuit board holder (5)` while arranging all wires in place. The `load cell's (7)` wires should go under the circuit `board (10)` and the Arduino cables should be on top routing out at the side facing towards the `brake lever (8)`. 
 9. Use four M2.5 x 8 fillister head screws (not shown in drawing) to install the `lid (6)` onto the `circuit board holder (5)`. The recess in the bottom of the `lid (6)` should go over the Arduino wires and gently press against them to hold them in place. 
 
-<a id="Figure_8"></a>
-![Two pictures showing the assembled circuit board from top and below installed on the module](images/Figure_8_Circuit_Board.png)
-*Figure 8 pictures of the amplifier circuit board (10) installed on the brake module*
+<a id="Figure_8"></a> ![Two pictures showing the assembled circuit board from top and below installed on the module](images/Figure_8_Circuit_Board.png)*Figure 8 pictures of the amplifier circuit board (10) installed on the brake module*
 ### Connection to Arudino and Testing
 Again, please refer to the [Load cell with Arduino](https://edg.uchicago.edu/tutorials/load_cell/) documentation to connect the wires with the Arduino and test the functionality of the electronics.  
 # Software
