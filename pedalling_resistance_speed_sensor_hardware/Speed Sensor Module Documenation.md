@@ -29,21 +29,24 @@ In summary, this technical overview provides a detailed blueprint for integratin
 This documentation presents an open-source speed measuring module developed for use in indoor cycling simulators, with the goal of enabling accurate, high-frequency, low-latency speed measurement in real-time simulation environments. It provides detailed building instructions to support reproduction and reuse in other simulator setups, while also offering comprehensive technical information to facilitate transparent comparison with other simulator technologies.
 
 <a id="Figure_1"></a>
+
 ![Figure_1](images/Figure_1_System_overview_Sensors_and_actuators.png)
-*Figure 1 System overview: Sensors and actuators*
+<p><em>Figure 1 System overview: Sensors and actuators</em></p>
+
 # Technical Overview
 
 ## Speed Sensor Module Connection to Kickr Bike
 
 
 <a id="Figure_2"></a>
-![Figure_2](images/Figure_2_Mechanical_Integration_Speed_Sensor_Module.png)
-*Figure 2 Mechanical integration - Speed Sensor Module Connection to Arduino*
 
+![Figure_2](images/Figure_2_Mechanical_Integration_Speed_Sensor_Module.png)
+<p><em>Figure 2 Mechanical integration - Speed Sensor Module Connection to Arduino</em></p>
 
 <a id="Figure_3"></a>
+
 ![Figure_3](images/Figure_3_Speed_Sensor_Signal_Transmission.png)
-*Figure 3 Speed sensor signal transmission and processing*
+<p><em>Figure 3 Speed sensor signal transmission and processing</em></p>
 
 Note: The steering sensor is shown above ([Figure 3](#Figure_3)) is for representation of the simulator system. However, there lies a separate documentation for steering which holds the same structure of presentation as the speed sensor.
 
@@ -64,8 +67,9 @@ This seamless hardware to software loop enables real time monitoring of the bicy
 ## Speed Sensor Wiring to Arduino 
 
 <a id="Figure_4"></a>
+
 ![Figure_4](images/Figure_4_Electrical_Integration_Speed_Sensor_Wiring.png)
-*Figure 4 Electrical integration - Speed Sensor Wiring Connection to Arduino*
+<p><em>Figure 4 Electrical integration - Speed Sensor Wiring Connection to Arduino</em></p>
 
  **Table 1 Speed Sensor Wiring**
 
@@ -78,8 +82,10 @@ This seamless hardware to software loop enables real time monitoring of the bicy
 | 5            | D3 (INT1)         |
 
 <a id="Figure_5"></a>
+
 ![Figure_5](images/Figure_5_Speed_Sensor_Wiring_Connection.png)
-*Figure 5 Speed Sensor Wiring connection through Arduino to simulator software*
+<p><em>Figure 5 Speed Sensor Wiring connection through Arduino to simulator software</em></p>
+
 ### Connection Overview and Hardware
 The diagram above illustrates how the speed sensor module is connected to the Arduino Uno to enable rotational speed measurementon the Kickr Bike. Each pin on the sensor corresponds to a specific function and is wired directly to a compatible Arduino pin: **Power Supply (5 V & GND)** - The sensor is powered through the Arduino's 5 V and GND pins, connected to encoder wires **4** and **1** respectively. **Signal Pins (Channel A & B)** - Encoder wires **3** and **5** are used for signal transmission. They are connected to Arduino digital pins **D2 (INT0)** and **D3 (INT1)**, enabling the detection of rising/falling signal edges.
 
@@ -88,14 +94,19 @@ This setup allows the Arduino to count encoder pulses and calculate speed using 
 
 
 <a id="Figure_6"></a>
+
 ![Figure_6](images/Figure_6_Assembly_Speed_Sensor.png)
-*Figure 6 Assembled View of the Speed Sensor
+<p><em>Figure 6 Assembled View of the Speed Sensor</em></p>
+
 <a id="Figure_7"></a>
+
 ![Figure_7](images/Figure_7_Exploded_View_Speed_Sensor.png)
-*Figure  7 Exploded View of the Speed Sensor*
+<p><em>Figure  7 Exploded View of the Speed Sensor</em></p>
+
 <a id="Figure_8"></a>
+
 ![Figure_8](images/Figure_8_Assembly_Drawing_Speed_Sensor.png)
-*Figure  8 Assembly Drawing of the Speed Sensor*
+<p><em>Figure  8 Assembly Drawing of the Speed Sensor</em></p>
 
 **Table 2 Bill of Materials (BOM)**
 
@@ -224,8 +235,9 @@ Additional Recommendations:
 - Tolerance Fit: It is recommended to maintain ±0.05 mm tolerance for critical bore fits, especially for bearing seats and shaft passages.
 
 <a id="Figure_9"></a>
+
 ![Figure_9](images/Figure_9_Prusa_G-code_Viewer_Speed.png)
-*Figure 9 Screenshot Prusa G-code Viewer*
+<p><em>Figure 9 Screenshot Prusa G-code Viewer</em></p>
 
 The screenshot ([Figure 9](#Figure_9)) from Prusa G-code Viewer shows the exact layout and orientation of all parts on the printer tray during printing. This is critical for:
 - Ensuring flat-base printing and stable adhesion to the build plate
