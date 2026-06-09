@@ -163,7 +163,7 @@ Again, please refer to the [Load cell with Arduino](https://edg.uchicago.edu/tut
 The software for the Arduino and the interface to the simulation computer is documented in a separate repository which can be found under following link:
 
 ```
-<https://openbikesim.uni-wuppertal.de/tiptop-simulator/>
+https://openbikesim.uni-wuppertal.de/tiptop-simulator/
 
 ```
 
