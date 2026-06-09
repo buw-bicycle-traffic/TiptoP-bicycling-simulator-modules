@@ -33,7 +33,10 @@ This brake module is designed for **direct mounting onto standard bicycle handle
 ![Figure_2](images/Figure_2_Brake_Module.png)
 <p><em>Figure 2 Brake Module for installation on an off-the-shelf bicycle handle bar</em></p>
 
-<a id="Figure_3"></a> ![Figure_3](images/Figure_3_Brake_Module_Signal_Processing.png)*Figure 3 Brake Module signal transmission and processing*
+<a id="Figure_3"></a>
+
+![Figure_3](images/Figure_3_Brake_Module_Signal_Processing.png)
+<p><em>Figure 3 Brake Module signal transmission and processing</em></p>
 
 ## Brake Modul Wiring and Arduino Code
 For the electronic implementation with an Arduino Uno we followed the documentation ["Working with a Load Cell and an Arduino"](https://edg.uchicago.edu/tutorials/load_cell/) published by the University of Chicago. Please refer to this document for all details on the wiring and Arduino code. 
