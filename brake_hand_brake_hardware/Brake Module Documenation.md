@@ -17,7 +17,7 @@ The brake subsystem detects a bicyclist’s deceleration input to modulate longi
 
 **Key consideration:** Ensure the chosen method aligns with the simulator’s fidelity requirements and hardware integration constraints for accurate, responsive braking behaviour.
 <a id="Figure_1"></a>
-![Figure_1](images/Figure_1_System_overview_Sensors_and_actuators.png)
+![Figure_1](images/Figure_1_System_overview_Sensors_and_actuators.jpg)
 *Figure 1 System overview: Sensors and actuators*
 # Technical Overview
 ## Handlebar Integration and Signal Processing
@@ -30,12 +30,12 @@ This brake module is designed for **direct mounting onto standard bicycle handle
 
 <a id="Figure_2"></a>
 
-![Figure_2](images/Figure_2_Brake_Module.png)
+![Figure_2](images/Figure_2_Brake_Module.jpg)
 <p><em>Figure 2 Brake Module for installation on an off-the-shelf bicycle handle bar</em></p>
 
 <a id="Figure_3"></a>
 
-![Figure_3](images/Figure_3_Brake_Module_Signal_Processing.png)
+![Figure_3](images/Figure_3_Brake_Module_Signal_Processing.jpg)
 <p><em>Figure 3 Brake Module signal transmission and processing</em></p>
 
 ## Brake Modul Wiring and Arduino Code
@@ -45,12 +45,12 @@ Below [Figure 4](#Figure_4) shows the assembly drawing of the brake sensor witho
 
 <a id="Figure_4"></a>
 
-![Figure_4](images/Figure_4_brake_assembled_view.png)
+![Figure_4](images/Figure_4_brake_assembled_view.jpg)
 <p><em>Figure 4 Brake Module Assembly Drawing </em></p>
 
 <a id="Figure_5"></a>
 
-![Figure_5](images/Figure_5_brake_exploded_view.png)
+![Figure_5](images/Figure_5_brake_exploded_view.jpg)
 <p><em>Figure 5 Brake Module Exploded View Drawing with Part List</em></p>
 
 **Table 2 Bill of Materials (BOM)**
@@ -102,7 +102,7 @@ Additional Recommendations:
 
 <a id="Figure_6"></a> 
 
-![A screen shot of the Prusa Slicer software showing the sliced parts on the print tray of a Prusa i3 MK3 printer.](images/Figure_6_Prusa_G-code_Viewer_Brake.png)
+![A screen shot of the Prusa Slicer software showing the sliced parts on the print tray of a Prusa i3 MK3 printer.](images/Figure_6_Prusa_G-code_Viewer_Brake.jpg)
 <p><em>Figure 6 Screen shot Prusa G-code Viewer</em></p>
 
 The screenshot ([Figure 6](#Figure_6)) from Prusa G-code Viewer shows the exact layout and orientation of all parts on the printer tray during printing. This is critical for:
@@ -124,7 +124,7 @@ The `bolt (3)` is made according to the manufacturing drawing shown in [Figure 7
 6. Deburr all sharp edges and clean bolt from residual cutting oil.
 
 <a id="Figure_7"></a>
-![Manufacturing drawing of the bolt (3)](images/Figure_7_bolt_V1_manufacturing_drawing.png)
+![Manufacturing drawing of the bolt (3)](images/Figure_7_bolt_V1_manufacturing_drawing.jpg)
 <p><em>Figure 7 Manufacturing drawing of the bolt (3)</em></p>
 
 ## Mechanical Assembly
@@ -155,7 +155,7 @@ The `circuit board (10)` is used to hold the `amplifier (11)` and connect it to 
 9. Use four M2.5 x 8 fillister head screws (not shown in drawing) to install the `lid (6)` onto the `circuit board holder (5)`. The recess in the bottom of the `lid (6)` should go over the Arduino wires and gently press against them to hold them in place. 
 
 <a id="Figure_8"></a>
-![Two pictures showing the assembled circuit board from top and below installed on the module](images/Figure_8_Circuit_Board.png)<p><em>Figure 8 pictures of the amplifier circuit board (10) installed on the brake module</em></p>
+![Two pictures showing the assembled circuit board from top and below installed on the module](images/Figure_8_Circuit_Board.jpg)<p><em>Figure 8 pictures of the amplifier circuit board (10) installed on the brake module</em></p>
  
 ### Connection to Arudino and Testing
 Again, please refer to the [Load cell with Arduino](https://edg.uchicago.edu/tutorials/load_cell/) documentation to connect the wires with the Arduino and test the functionality of the electronics.  
