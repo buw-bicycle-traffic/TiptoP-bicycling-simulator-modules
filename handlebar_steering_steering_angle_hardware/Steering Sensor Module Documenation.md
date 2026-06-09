@@ -12,19 +12,27 @@ In a virtual reality bicycling simulator, steering input plays a crucial role in
 To enable low-latency, high-precision steering in the simulator, we integrated a dedicated sensor module into the handlebar assembly. At the core of this module is an absolute rotary encoder that directly measures the steering angle as the user turns the handlebars. Unlike incremental encoders or other indirect sensors, the absolute encoder provides a stable, always-referenced angle meaning it never loses track of its position, even if the system is restarted or repositioned.
 The encoder is mounted at the base of the handlebar stem and mechanically coupled to the rotation axis. The angle data is read by an Arduino Uno the same microcontroller that handles speed measurement which processes the signal and converts the raw sensor output into rotational degrees. The converted data is then sent to the simulation PC using UDP over Ethernet, where it is interpreted by the CARLA environment in real time. This setup ensures minimal latency and smooth, continuous steering input within the simulation.
 The goal of this documentation is to describe the steering sensor module as an open-source component of the simulator. It includes all necessary information to replicate the hardware setup, interface it with the Arduino, and integrate it into your simulator hardware. The software is documented in a separate document. By providing both technical detail and practical assembly guidance, this documentation supports reuse, modification, and further development in similar simulator projects.
+
 <a id="Figure_1"></a>
+
 ![Figure_1](images/Figure_1_System_overview_Sensors_and_actuators.png)
-*Figure 1 System overview: Sensors and actuators*
+<p><em>Figure 1 System overview: Sensors and actuators</em></p>
+
 # Technical Overview
 
 ## Steering Sensor Module Connection to Kickr Bike
-<a id="Figure_2"></a> ![Figure_2](images/Figure_2_Mechanical_integration_Steering_Sensor_Module.png)
 
-*Figure 2 Mechanical integration - Steering Sensor Module Connection to*
-*Kickr Bike*
+<a id="Figure_2"></a>
 
-<a id="Figure_3"></a> ![Figure_3](images/Figure_3_Steering_Sensor_Signal_Transmission_Processing.png)
-*Figure 3 Steering sensor signal transmission and processing*
+![Figure_2](images/Figure_2_Mechanical_integration_Steering_Sensor_Module.png)
+<p><em>Figure 2 Mechanical integration - Steering Sensor Module Connection to Kickr Bike</em></p>
+
+
+<a id="Figure_3"></a>
+
+![Figure_3](images/Figure_3_Steering_Sensor_Signal_Transmission_Processing.png)
+<p><em>Figure 3 Steering sensor signal transmission and processing</em></p>
+
 
 Note: [Figure 3](#Figure_3) shows the full signal chain for steering: the absolute encoder is read by the Arduino and transmitted via UDP to the simulation PC. A separate document covers the speed module in the same structure as this steering documentation.
 ### System Integration and Function
@@ -45,8 +53,10 @@ This integration provides a direct and highly responsive feedback loop between t
 With the functional role of the steering sensor established, the next section outlines how the encoder is electrically connected to the Arduino, ensuring proper signal acquisition and stable communication during operation.
 ## Steering Sensor Wiring to Arduino 
 
-<a id="Figure_4"></a> ![Figure_4](images/Figure_4_Electrical_Integration_Steering_Sensor.png)
-*Figure 4 Electrical integration - Steering Sensor Wiring Connection to Arduino*
+<a id="Figure_4"></a>
+
+![Figure_4](images/Figure_4_Electrical_Integration_Steering_Sensor.png)
+<p><em>Figure 4 Electrical integration - Steering Sensor Wiring Connection to Arduino</em></p>
 
  **Table 1 Steering Sensor Wiring**
 
@@ -74,8 +84,10 @@ A sixth wire (blue) corresponds to DI (Data In) but is not used in this setup.
 
 This configuration allows the Arduino to continuously poll the encoder and retrieve the current handlebar position. Since the encoder provides absolute values, there is no need to track previous rotations or recalibrate at startup. As always, care should be taken to ensure secure and clean wiring. Proper connections are essential not only for accurate signal reading but also to prevent noise, data glitches, or unexpected disconnections during simulation use.
 ## Assembly Drawing and Bill of Materials (BOM)
-<a id="Figure_6"></a> ![Figure_6](images/Figure_6_Assembly_Drawing_Steering_Sensor.png)
-*Figure 6 Assembly Drawing of the Steering Sensor*
+<a id="Figure_6"></a>
+
+![Figure_6](images/Figure_6_Assembly_Drawing_Steering_Sensor.png)
+<p><em>Figure 6 Assembly Drawing of the Steering Sensor</em></p>
   
 **Table 2 Bill of Materials (BOM)**
 
@@ -141,8 +153,11 @@ Note: Automatic supports were essential for maintaining bore hole geometry, part
 Additional Recommendations:
 - Post-processing: After printing, components were deburred and cleaned to remove any support material and residual brim structures. This ensures tight fits between bearings, shafts, and sensor housings.
 - Tolerance Fit: It is recommended to maintain ±0.05 mm tolerance for critical bore fits, especially for bearing seats and shaft passages.
-<a id="Figure_7"></a> ![Figure_7](images/Figure_7_Prusa_G-code_Viewer.png)
-*Figure 7 Screenshot Prusa G-code Viewer*
+
+<a id="Figure_7"></a>
+
+![Figure_7](images/Figure_7_Prusa_G-code_Viewer.png)
+<p><em>Figure 7 Screenshot Prusa G-code Viewer</em></p>
 
 The screenshot ([Figure 7](#Figure_7)) from Prusa G-code Viewer shows the exact layout and orientation of all parts on the printer tray during printing. This is critical for:
 - Ensuring flat-base printing and stable adhesion to the build plate
