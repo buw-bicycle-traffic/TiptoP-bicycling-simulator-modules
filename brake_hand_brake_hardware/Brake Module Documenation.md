@@ -41,10 +41,18 @@ This brake module is designed for **direct mounting onto standard bicycle handle
 ## Brake Modul Wiring and Arduino Code
 For the electronic implementation with an Arduino Uno we followed the documentation ["Working with a Load Cell and an Arduino"](https://edg.uchicago.edu/tutorials/load_cell/) published by the University of Chicago. Please refer to this document for all details on the wiring and Arduino code. 
 ## Assembly Drawing and Bill of Materials (BOM)
-Below [Figure 4](#Figure_4) shows the assembly drawing of the brake sensor without the brake lever while [Figure 5](#Figure_5) shows the exploded view and BOM for the complete assembly with a demonstrative brake lever dummy similar to the model we used. 
-<a id="Figure_4"></a> ![Figure_4](images/Figure_4_brake_assembled_view.png)*Figure 4 Brake Module Assembly Drawing*
-<a id="Figure_5"></a> ![Figure_5](images/Figure_5_brake_exploded_view.png)*Figure 5 Brake Module Exploded View Drawing with Part List*
-  
+Below [Figure 4](#Figure_4) shows the assembly drawing of the brake sensor without the brake lever while [Figure 5](#Figure_5) shows the exploded view and BOM for the complete assembly with a demonstrative brake lever dummy similar to the model we used.
+
+<a id="Figure_4"></a>
+
+![Figure_4](images/Figure_4_brake_assembled_view.png)
+<p><em>Figure 4 Brake Module Assembly Drawing </em></p>
+
+<a id="Figure_5"></a>
+
+![Figure_5](images/Figure_5_brake_exploded_view.png)
+<p><em>Figure 5 Brake Module Exploded View Drawing with Part List</em></p>
+
 **Table 2 Bill of Materials (BOM)**
 
 | **Item** | **Qty** | **Part Name**             | **Part Name / Reference**                   | **Description**                                                                                                                                                                                 | **Material/ Standard**      | **Remarks**                                                                                                                                                                                                                                      |
@@ -92,7 +100,10 @@ Additional Recommendations:
 - Post-processing: After printing, components were deburred and cleaned to remove any support material and residual brim structures. This ensures tight fits between bearings, shafts, and sensor housings.
 - Tolerance Fit: It is recommended to maintain ±0.05 mm tolerance for critical bore fits, especially for bearing seats and shaft passages.
 
-<a id="Figure_6"></a> ![A screen shot of the Prusa Slicer software showing the sliced parts on the print tray of a Prusa i3 MK3 printer.](images/Figure_6_Prusa_G-code_Viewer_Brake.png)*Figure 6 Screen shot Prusa G-code Viewer*
+<a id="Figure_6"></a> 
+
+![A screen shot of the Prusa Slicer software showing the sliced parts on the print tray of a Prusa i3 MK3 printer.](images/Figure_6_Prusa_G-code_Viewer_Brake.png)
+<p><em>Figure 6 Screen shot Prusa G-code Viewer</em></p>
 
 The screenshot ([Figure 6](#Figure_6)) from Prusa G-code Viewer shows the exact layout and orientation of all parts on the printer tray during printing. This is critical for:
 - Ensuring flat-base printing and stable adhesion to the build plate
@@ -111,8 +122,11 @@ The `bolt (3)` is made according to the manufacturing drawing shown in [Figure 7
 4. Use the drill press to drill a radial through bore with a diameter of 2.5 mm (+/-0.2 mm) exactly halfway along the length of the bolt.
 5. Use a saw to cut the slot in the end opposite the axial thread. The slot should align with the radial bore. The slot should fit a flat blade screw driver so that it can be used to align the radial bore later in the assembly process. 
 6. Deburr all sharp edges and clean bolt from residual cutting oil.
-<a id="Figure_7"></a> ![Manufacturing drawing of the bolt (3)](images/Figure_7_bolt_V1_manufacturing_drawing.png)
-*Figure 7 Manufacturing drawing of the bolt (3)*
+
+<a id="Figure_7"></a>
+![Manufacturing drawing of the bolt (3)](images/Figure_7_bolt_V1_manufacturing_drawing.png)
+<p><em>Figure 7 Manufacturing drawing of the bolt (3)</em></p>
+
 ## Mechanical Assembly
 The following steps provide a procedure to ensure your mechanical assembly of the steering sensor is precise and reliable.
 
@@ -140,7 +154,9 @@ The `circuit board (10)` is used to hold the `amplifier (11)` and connect it to 
 8. Push the `circuit board (10)` into the seat inside the `circuit board holder (5)` while arranging all wires in place. The `load cell's (7)` wires should go under the circuit `board (10)` and the Arduino cables should be on top routing out at the side facing towards the `brake lever (8)`. 
 9. Use four M2.5 x 8 fillister head screws (not shown in drawing) to install the `lid (6)` onto the `circuit board holder (5)`. The recess in the bottom of the `lid (6)` should go over the Arduino wires and gently press against them to hold them in place. 
 
-<a id="Figure_8"></a> ![Two pictures showing the assembled circuit board from top and below installed on the module](images/Figure_8_Circuit_Board.png)*Figure 8 pictures of the amplifier circuit board (10) installed on the brake module*
+<a id="Figure_8"></a>
+![Two pictures showing the assembled circuit board from top and below installed on the module](images/Figure_8_Circuit_Board.png)<p><em>Figure 8 pictures of the amplifier circuit board (10) installed on the brake module</em></p>
+ 
 ### Connection to Arudino and Testing
 Again, please refer to the [Load cell with Arduino](https://edg.uchicago.edu/tutorials/load_cell/) documentation to connect the wires with the Arduino and test the functionality of the electronics.  
 # Software
