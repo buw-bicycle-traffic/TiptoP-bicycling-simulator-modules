@@ -30,7 +30,7 @@ This documentation presents an open-source speed measuring module developed for 
 
 <a id="Figure_1"></a>
 
-![Figure_1](images/Figure_1_System_overview_Sensors_and_actuators.png)
+![Figure_1](images/Figure_1_System_overview_Sensors_and_actuators.jpg)
 <p><em>Figure 1 System overview: Sensors and actuators</em></p>
 
 # Technical Overview
@@ -40,12 +40,12 @@ This documentation presents an open-source speed measuring module developed for 
 
 <a id="Figure_2"></a>
 
-![Figure_2](images/Figure_2_Mechanical_Integration_Speed_Sensor_Module.png)
+![Figure_2](images/Figure_2_Mechanical_Integration_Speed_Sensor_Module.jpg)
 <p><em>Figure 2 Mechanical integration - Speed Sensor Module Connection to Arduino</em></p>
 
 <a id="Figure_3"></a>
 
-![Figure_3](images/Figure_3_Speed_Sensor_Signal_Transmission.png)
+![Figure_3](images/Figure_3_Speed_Sensor_Signal_Transmission.jpg)
 <p><em>Figure 3 Speed sensor signal transmission and processing</em></p>
 
 Note: The steering sensor is shown above ([Figure 3](#Figure_3)) is for representation of the simulator system. However, there lies a separate documentation for steering which holds the same structure of presentation as the speed sensor.
@@ -68,7 +68,7 @@ This seamless hardware to software loop enables real time monitoring of the bicy
 
 <a id="Figure_4"></a>
 
-![Figure_4](images/Figure_4_Electrical_Integration_Speed_Sensor_Wiring.png)
+![Figure_4](images/Figure_4_Electrical_Integration_Speed_Sensor_Wiring.jpg)
 <p><em>Figure 4 Electrical integration - Speed Sensor Wiring Connection to Arduino</em></p>
 
  **Table 1 Speed Sensor Wiring**
@@ -83,7 +83,7 @@ This seamless hardware to software loop enables real time monitoring of the bicy
 
 <a id="Figure_5"></a>
 
-![Figure_5](images/Figure_5_Speed_Sensor_Wiring_Connection.png)
+![Figure_5](images/Figure_5_Speed_Sensor_Wiring_Connection.jpg)
 <p><em>Figure 5 Speed Sensor Wiring connection through Arduino to simulator software</em></p>
 
 ### Connection Overview and Hardware
@@ -95,17 +95,17 @@ This setup allows the Arduino to count encoder pulses and calculate speed using 
 
 <a id="Figure_6"></a>
 
-![Figure_6](images/Figure_6_Assembly_Speed_Sensor.png)
+![Figure_6](images/Figure_6_Assembly_Speed_Sensor.jpg)
 <p><em>Figure 6 Assembled View of the Speed Sensor</em></p>
 
 <a id="Figure_7"></a>
 
-![Figure_7](images/Figure_7_Exploded_View_Speed_Sensor.png)
+![Figure_7](images/Figure_7_Exploded_View_Speed_Sensor.jpg)
 <p><em>Figure  7 Exploded View of the Speed Sensor</em></p>
 
 <a id="Figure_8"></a>
 
-![Figure_8](images/Figure_8_Assembly_Drawing_Speed_Sensor.png)
+![Figure_8](images/Figure_8_Assembly_Drawing_Speed_Sensor.jpg)
 <p><em>Figure  8 Assembly Drawing of the Speed Sensor</em></p>
 
 **Table 2 Bill of Materials (BOM)**
@@ -236,7 +236,7 @@ Additional Recommendations:
 
 <a id="Figure_9"></a>
 
-![Figure_9](images/Figure_9_Prusa_G-code_Viewer_Speed.png)
+![Figure_9](images/Figure_9_Prusa_G-code_Viewer_Speed.jpg)
 <p><em>Figure 9 Screenshot Prusa G-code Viewer</em></p>
 
 The screenshot ([Figure 9](#Figure_9)) from Prusa G-code Viewer shows the exact layout and orientation of all parts on the printer tray during printing. This is critical for:
