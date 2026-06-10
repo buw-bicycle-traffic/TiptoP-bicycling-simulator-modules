@@ -251,6 +251,4 @@ CAD_and_print\\speed_sensor_1.0\\3D-print\\speed_measuring_V1.gcode
 # Software
 The software for the Arduino and the interface to the simulation computer is documented in a separate repository which can be found under following link:
 
-```
-\>\>\>\>\>\>\>\>\>\>\>\> ADD LINK TO ABOOZAR'S DOC\<\<\<\<\<\<\<\<\<\<\<
-```
+https://github.com/buw-bicycle-traffic/CARLA-Bicycling-Simulator-Scripts
