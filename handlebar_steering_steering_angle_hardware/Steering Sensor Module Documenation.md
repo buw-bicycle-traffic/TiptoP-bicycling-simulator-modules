@@ -68,8 +68,12 @@ With the functional role of the steering sensor established, the next section ou
 | 4                    | DO (Data Out)    | Orange          | Pin (D7 / PD7)         | DigitalRead (input from encoder) |
 | 5                    | VCC (+5 V)       | Red             | Power                  | Powers the encoder               |
 | 6                    | CS (Chip Select) | Brown           | Pin (D6 / PD6)         | DigitalWrite (output to encoder) |
-<a id="Figure_5"></a> ![Figure_5](images/Figure_5_Steering_Sensor_Wiring_Connection.jpg)
-*Figure 5 Steering Sensor Wiring connection through Arduino to simulator software*
+
+<a id="Figure_5"></a> 
+
+![Figure_5](images/Figure_5_Steering_Sensor_Wiring_Connection.jpg)
+<p><em>Figure 5 Steering Sensor Wiring connection through Arduino to simulator software</em></p>
+
 ### Connection Overview and Hardware
 The diagram above shows how the steering sensor is connected to the Arduino Uno to enable real-time angle detection on the Kickr Bike. The sensor used here is a 10-bit absolute rotary encoder, and it communicates with the Arduino via a simple synchronous serial interface. Each of its wires serves a specific function and is routed to a corresponding Arduino pin:
 
