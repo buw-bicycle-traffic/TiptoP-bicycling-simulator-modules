@@ -1,5 +1,5 @@
 ---
-title: Brake Module Documenation
+title: Brake Module Documentation
 tags:
   - OpenBikeSim
   - bicycling_simulator
@@ -38,7 +38,7 @@ This brake module is designed for **direct mounting onto standard bicycle handle
 ![Figure_3](images/Figure_3_Brake_Module_Signal_Processing.jpg)
 <p><em>Figure 3 Brake Module signal transmission and processing</em></p>
 
-## Brake Modul Wiring and Arduino Code
+## Brake Module Wiring and Arduino Code
 For the electronic implementation with an Arduino Uno we followed the documentation ["Working with a Load Cell and an Arduino"](https://edg.uchicago.edu/tutorials/load_cell/) published by the University of Chicago. Please refer to this document for all details on the wiring and Arduino code. 
 ## Assembly Drawing and Bill of Materials (BOM)
 Below [Figure 4](#Figure_4) shows the assembly drawing of the brake sensor without the brake lever while [Figure 5](#Figure_5) shows the exploded view and BOM for the complete assembly with a demonstrative brake lever dummy similar to the model we used.
@@ -150,14 +150,14 @@ The `circuit board (10)` is used to hold the `amplifier (11)` and connect it to 
 4. Strip 2mm of the `load cell's (7)` cable ends and put them into holes next to the pins of the `amplifier (11)` which they are to be connected with. Note: Please consult the [Load cell with Arduino](https://edg.uchicago.edu/tutorials/load_cell/) documentation for the connections.
 5. Take a length of three-core ribbon cable just long enough to connect the module to the Arduino. Strip 2mm of the cables ends and put them into holes of the `circuit board (10)`. Again please refer to the documentation to find the best locations. 
 6. Use thin isolated copper strands to make the connections between  `amplifier (11)` pins, `load cell (7)` wires and the ribbon wire to the Arduino according to the documentation.
-7. Make sure the soldered connections are electrically conductive and there are no unintended short circuits. I necessary isolate with tape. 
+7. Make sure the soldered connections are electrically conductive and there are no unintended short circuits. If necessary isolate with tape. 
 8. Push the `circuit board (10)` into the seat inside the `circuit board holder (5)` while arranging all wires in place. The `load cell's (7)` wires should go under the circuit `board (10)` and the Arduino cables should be on top routing out at the side facing towards the `brake lever (8)`. 
 9. Use four M2.5 x 8 fillister head screws (not shown in drawing) to install the `lid (6)` onto the `circuit board holder (5)`. The recess in the bottom of the `lid (6)` should go over the Arduino wires and gently press against them to hold them in place. 
 
 <a id="Figure_8"></a>
 ![Two pictures showing the assembled circuit board from top and below installed on the module](images/Figure_8_Circuit_Board.jpg)<p><em>Figure 8 pictures of the amplifier circuit board (10) installed on the brake module</em></p>
  
-### Connection to Arudino and Testing
+### Connection to Arduino and Testing
 Again, please refer to the [Load cell with Arduino](https://edg.uchicago.edu/tutorials/load_cell/) documentation to connect the wires with the Arduino and test the functionality of the electronics.  
 # Software
 The software for the Arduino and the interface to the simulation computer is documented in a separate repository which can be found under following link:
@@ -173,6 +173,6 @@ While the presented brake module has strong advantages in its compact design and
 - The **assembly of the brake cable is tricky** and needs some skill to prevent splicing of the cable.
 - The signal is transferred as **analog** from brake to Arduino which may cause problems with the cable getting longer
 	- An analog to digital converter directly on the brake module would be ideal. 
-- When pulling the lever the i**ncrease of pressure over lever angle is very abrupt**. Once the adjustment screw in the `pressure cylinder (2)` hits the `load cell (7)` the increase in pressure is very steep while the lever angle does not increase much.  
+- When pulling the lever the **increase of pressure over lever angle is very abrupt**. Once the adjustment screw in the `pressure cylinder (2)` hits the `load cell (7)` the increase in pressure is very steep while the lever angle does not increase much.  
 	- A pressure spring between adjustment screw and `load cell (7)` would be very useful to improve the realism of the haptic feel. 
 
