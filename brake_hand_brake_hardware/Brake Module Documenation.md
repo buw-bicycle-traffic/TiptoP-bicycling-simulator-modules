@@ -162,10 +162,10 @@ Again, please refer to the [Load cell with Arduino](https://edg.uchicago.edu/tut
 # Software
 The software for the Arduino and the interface to the simulation computer is documented in a separate repository which can be found under following link:
 
-```
-https://openbikesim.uni-wuppertal.de/tiptop-simulator/
 
-```
+https://github.com/buw-bicycle-traffic/CARLA-Bicycling-Simulator-Scripts
+
+
 
 # Known Limitations and Potential for Improvement
 While the presented brake module has strong advantages in its compact design and ease of implementation via an Arduino microcontroller, there are also some limitations to this technical solution which are listed below: 
