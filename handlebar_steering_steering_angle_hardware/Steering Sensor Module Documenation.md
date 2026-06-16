@@ -15,7 +15,7 @@ The goal of this documentation is to describe the steering sensor module as an o
 
 <a id="Figure_1"></a>
 
-![Figure_1](images/Figure_1_System_overview_Sensors_and_actuators.png)
+![Figure_1](images/Figure_1_System_overview_Sensors_and_actuators.jpg)
 <p><em>Figure 1 System overview: Sensors and actuators</em></p>
 
 # Technical Overview
@@ -24,13 +24,13 @@ The goal of this documentation is to describe the steering sensor module as an o
 
 <a id="Figure_2"></a>
 
-![Figure_2](images/Figure_2_Mechanical_integration_Steering_Sensor_Module.png)
+![Figure_2](images/Figure_2_Mechanical_integration_Steering_Sensor_Module.jpg)
 <p><em>Figure 2 Mechanical integration - Steering Sensor Module Connection to Kickr Bike</em></p>
 
 
 <a id="Figure_3"></a>
 
-![Figure_3](images/Figure_3_Steering_Sensor_Signal_Transmission_Processing.png)
+![Figure_3](images/Figure_3_Steering_Sensor_Signal_Transmission_Processing.jpg)
 <p><em>Figure 3 Steering sensor signal transmission and processing</em></p>
 
 
@@ -55,7 +55,7 @@ With the functional role of the steering sensor established, the next section ou
 
 <a id="Figure_4"></a>
 
-![Figure_4](images/Figure_4_Electrical_Integration_Steering_Sensor.png)
+![Figure_4](images/Figure_4_Electrical_Integration_Steering_Sensor.jpg)
 <p><em>Figure 4 Electrical integration - Steering Sensor Wiring Connection to Arduino</em></p>
 
  **Table 1 Steering Sensor Wiring**
@@ -68,8 +68,12 @@ With the functional role of the steering sensor established, the next section ou
 | 4                    | DO (Data Out)    | Orange          | Pin (D7 / PD7)         | DigitalRead (input from encoder) |
 | 5                    | VCC (+5 V)       | Red             | Power                  | Powers the encoder               |
 | 6                    | CS (Chip Select) | Brown           | Pin (D6 / PD6)         | DigitalWrite (output to encoder) |
-<a id="Figure_5"></a> ![Figure_5](images/Figure_5_Steering_Sensor_Wiring_Connection.png)
-*Figure 5 Steering Sensor Wiring connection through Arduino to simulator software*
+
+<a id="Figure_5"></a> 
+
+![Figure_5](images/Figure_5_Steering_Sensor_Wiring_Connection.jpg)
+<p><em>Figure 5 Steering Sensor Wiring connection through Arduino to simulator software</em></p>
+
 ### Connection Overview and Hardware
 The diagram above shows how the steering sensor is connected to the Arduino Uno to enable real-time angle detection on the Kickr Bike. The sensor used here is a 10-bit absolute rotary encoder, and it communicates with the Arduino via a simple synchronous serial interface. Each of its wires serves a specific function and is routed to a corresponding Arduino pin:
 
@@ -86,7 +90,7 @@ This configuration allows the Arduino to continuously poll the encoder and retri
 ## Assembly Drawing and Bill of Materials (BOM)
 <a id="Figure_6"></a>
 
-![Figure_6](images/Figure_6_Assembly_Drawing_Steering_Sensor.png)
+![Figure_6](images/Figure_6_Assembly_Drawing_Steering_Sensor.jpg)
 <p><em>Figure 6 Assembly Drawing of the Steering Sensor</em></p>
   
 **Table 2 Bill of Materials (BOM)**
@@ -156,7 +160,7 @@ Additional Recommendations:
 
 <a id="Figure_7"></a>
 
-![Figure_7](images/Figure_7_Prusa_G-code_Viewer.png)
+![Figure_7](images/Figure_7_Prusa_G-code_Viewer.jpg)
 <p><em>Figure 7 Screenshot Prusa G-code Viewer</em></p>
 
 The screenshot ([Figure 7](#Figure_7)) from Prusa G-code Viewer shows the exact layout and orientation of all parts on the printer tray during printing. This is critical for:
@@ -171,7 +175,4 @@ CAD_and_print\\steering_angle_sensor_1.0\\3D-print\\encoder_housing_cap_V1.gcode
 # Software
 The software for the Arduino and the interface to the simulation computer is documented in a separate repository which can be found under following link:
 
-```
-\>\>\>\>\>\>\>\>\>\>\>\> ADD LINK TO ABOOZAR'S DOC\<\<\<\<\<\<\<\<\<\<\<
-
-```
+https://github.com/buw-bicycle-traffic/CARLA-Bicycling-Simulator-Scripts

@@ -1,5 +1,5 @@
 ---
-title: Brake Module Documenation
+title: Brake Module Documentation
 tags:
   - OpenBikeSim
   - bicycling_simulator
@@ -17,7 +17,7 @@ The brake subsystem detects a bicyclist’s deceleration input to modulate longi
 
 **Key consideration:** Ensure the chosen method aligns with the simulator’s fidelity requirements and hardware integration constraints for accurate, responsive braking behaviour.
 <a id="Figure_1"></a>
-![Figure_1](images/Figure_1_System_overview_Sensors_and_actuators.png)
+![Figure_1](images/Figure_1_System_overview_Sensors_and_actuators.jpg)
 *Figure 1 System overview: Sensors and actuators*
 # Technical Overview
 ## Handlebar Integration and Signal Processing
@@ -30,27 +30,27 @@ This brake module is designed for **direct mounting onto standard bicycle handle
 
 <a id="Figure_2"></a>
 
-![Figure_2](images/Figure_2_Brake_Module.png)
+![Figure_2](images/Figure_2_Brake_Module.jpg)
 <p><em>Figure 2 Brake Module for installation on an off-the-shelf bicycle handle bar</em></p>
 
 <a id="Figure_3"></a>
 
-![Figure_3](images/Figure_3_Brake_Module_Signal_Processing.png)
+![Figure_3](images/Figure_3_Brake_Module_Signal_Processing.jpg)
 <p><em>Figure 3 Brake Module signal transmission and processing</em></p>
 
-## Brake Modul Wiring and Arduino Code
+## Brake Module Wiring and Arduino Code
 For the electronic implementation with an Arduino Uno we followed the documentation ["Working with a Load Cell and an Arduino"](https://edg.uchicago.edu/tutorials/load_cell/) published by the University of Chicago. Please refer to this document for all details on the wiring and Arduino code. 
 ## Assembly Drawing and Bill of Materials (BOM)
 Below [Figure 4](#Figure_4) shows the assembly drawing of the brake sensor without the brake lever while [Figure 5](#Figure_5) shows the exploded view and BOM for the complete assembly with a demonstrative brake lever dummy similar to the model we used.
 
 <a id="Figure_4"></a>
 
-![Figure_4](images/Figure_4_brake_assembled_view.png)
+![Figure_4](images/Figure_4_brake_assembled_view.jpg)
 <p><em>Figure 4 Brake Module Assembly Drawing </em></p>
 
 <a id="Figure_5"></a>
 
-![Figure_5](images/Figure_5_brake_exploded_view.png)
+![Figure_5](images/Figure_5_brake_exploded_view.jpg)
 <p><em>Figure 5 Brake Module Exploded View Drawing with Part List</em></p>
 
 **Table 2 Bill of Materials (BOM)**
@@ -102,7 +102,7 @@ Additional Recommendations:
 
 <a id="Figure_6"></a> 
 
-![A screen shot of the Prusa Slicer software showing the sliced parts on the print tray of a Prusa i3 MK3 printer.](images/Figure_6_Prusa_G-code_Viewer_Brake.png)
+![A screen shot of the Prusa Slicer software showing the sliced parts on the print tray of a Prusa i3 MK3 printer.](images/Figure_6_Prusa_G-code_Viewer_Brake.jpg)
 <p><em>Figure 6 Screen shot Prusa G-code Viewer</em></p>
 
 The screenshot ([Figure 6](#Figure_6)) from Prusa G-code Viewer shows the exact layout and orientation of all parts on the printer tray during printing. This is critical for:
@@ -124,7 +124,7 @@ The `bolt (3)` is made according to the manufacturing drawing shown in [Figure 7
 6. Deburr all sharp edges and clean bolt from residual cutting oil.
 
 <a id="Figure_7"></a>
-![Manufacturing drawing of the bolt (3)](images/Figure_7_bolt_V1_manufacturing_drawing.png)
+![Manufacturing drawing of the bolt (3)](images/Figure_7_bolt_V1_manufacturing_drawing.jpg)
 <p><em>Figure 7 Manufacturing drawing of the bolt (3)</em></p>
 
 ## Mechanical Assembly
@@ -150,22 +150,22 @@ The `circuit board (10)` is used to hold the `amplifier (11)` and connect it to 
 4. Strip 2mm of the `load cell's (7)` cable ends and put them into holes next to the pins of the `amplifier (11)` which they are to be connected with. Note: Please consult the [Load cell with Arduino](https://edg.uchicago.edu/tutorials/load_cell/) documentation for the connections.
 5. Take a length of three-core ribbon cable just long enough to connect the module to the Arduino. Strip 2mm of the cables ends and put them into holes of the `circuit board (10)`. Again please refer to the documentation to find the best locations. 
 6. Use thin isolated copper strands to make the connections between  `amplifier (11)` pins, `load cell (7)` wires and the ribbon wire to the Arduino according to the documentation.
-7. Make sure the soldered connections are electrically conductive and there are no unintended short circuits. I necessary isolate with tape. 
+7. Make sure the soldered connections are electrically conductive and there are no unintended short circuits. If necessary isolate with tape. 
 8. Push the `circuit board (10)` into the seat inside the `circuit board holder (5)` while arranging all wires in place. The `load cell's (7)` wires should go under the circuit `board (10)` and the Arduino cables should be on top routing out at the side facing towards the `brake lever (8)`. 
 9. Use four M2.5 x 8 fillister head screws (not shown in drawing) to install the `lid (6)` onto the `circuit board holder (5)`. The recess in the bottom of the `lid (6)` should go over the Arduino wires and gently press against them to hold them in place. 
 
 <a id="Figure_8"></a>
-![Two pictures showing the assembled circuit board from top and below installed on the module](images/Figure_8_Circuit_Board.png)<p><em>Figure 8 pictures of the amplifier circuit board (10) installed on the brake module</em></p>
+![Two pictures showing the assembled circuit board from top and below installed on the module](images/Figure_8_Circuit_Board.jpg)<p><em>Figure 8 pictures of the amplifier circuit board (10) installed on the brake module</em></p>
  
-### Connection to Arudino and Testing
+### Connection to Arduino and Testing
 Again, please refer to the [Load cell with Arduino](https://edg.uchicago.edu/tutorials/load_cell/) documentation to connect the wires with the Arduino and test the functionality of the electronics.  
 # Software
 The software for the Arduino and the interface to the simulation computer is documented in a separate repository which can be found under following link:
 
-```
-https://openbikesim.uni-wuppertal.de/tiptop-simulator/
 
-```
+https://github.com/buw-bicycle-traffic/CARLA-Bicycling-Simulator-Scripts
+
+
 
 # Known Limitations and Potential for Improvement
 While the presented brake module has strong advantages in its compact design and ease of implementation via an Arduino microcontroller, there are also some limitations to this technical solution which are listed below: 
@@ -173,6 +173,6 @@ While the presented brake module has strong advantages in its compact design and
 - The **assembly of the brake cable is tricky** and needs some skill to prevent splicing of the cable.
 - The signal is transferred as **analog** from brake to Arduino which may cause problems with the cable getting longer
 	- An analog to digital converter directly on the brake module would be ideal. 
-- When pulling the lever the i**ncrease of pressure over lever angle is very abrupt**. Once the adjustment screw in the `pressure cylinder (2)` hits the `load cell (7)` the increase in pressure is very steep while the lever angle does not increase much.  
+- When pulling the lever the **increase of pressure over lever angle is very abrupt**. Once the adjustment screw in the `pressure cylinder (2)` hits the `load cell (7)` the increase in pressure is very steep while the lever angle does not increase much.  
 	- A pressure spring between adjustment screw and `load cell (7)` would be very useful to improve the realism of the haptic feel. 
 
