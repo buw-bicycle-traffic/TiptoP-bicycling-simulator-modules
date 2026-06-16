@@ -1,5 +1,5 @@
 ---
-title: Speed Sensor Module Documenation
+title: Speed Sensor Module Documentation
 tags:
   - OpenBikeSim
   - bicycling_simulator
@@ -20,7 +20,7 @@ In a bicycling simulator, the speed of the bicycle avatar in the virtual environ
 
 When off-the-shelf pedalling resistance modules are used, the provided speed signals are often limited to 1Hz update rate or slower and come with high latency due to wireless transmission via Bluetooth or ANT+ interfaces. For use in a bicycling simulator, researchers often equip them with an additional sensor to measure the speed at a rotating part of the pedalling resistance module or bicycle mock-up. Sensor technologies used for measuring the speed include Hall effect sensors, optical rotary encoders, side-runner dynamos, and inertial measurement modules which are implemented with very individual mechanical designs to fit to the prevailing pedalling resistance module and bicycle mock-up used.
 
-To create a speed measuring module which can be adapted to any simulator, we developed a design bases on a friction wheel which can easily be attached to a rotating part. The rotation rate is measured using an optical rotary encoder with 1000 increments per turn to get a signal with high frequency.
+To create a speed measuring module which can be adapted to any simulator, we developed a design based on a friction wheel which can easily be attached to a rotating part. The rotation rate is measured using an optical rotary encoder with 1000 increments per turn to get a signal with high frequency.
 
 The signal is read by an Arduino Uno microcontroller which converts it to a speed signal, taking into account the circumferences of the friction wheel and rotating part. The resulting speed is then communicated to the simulation computer via UDP over Ethernet.
 
@@ -48,7 +48,7 @@ This documentation presents an open-source speed measuring module developed for 
 ![Figure_3](images/Figure_3_Speed_Sensor_Signal_Transmission.jpg)
 <p><em>Figure 3 Speed sensor signal transmission and processing</em></p>
 
-Note: The steering sensor is shown above ([Figure 3](#Figure_3)) is for representation of the simulator system. However, there lies a separate documentation for steering which holds the same structure of presentation as the speed sensor.
+Note: The steering sensor shown above ([Figure 3](#Figure_3)) is for representation of the simulator system. However, there lies a separate documentation for steering which holds the same structure of presentation as the speed sensor.
 
 ### System Integration and Function
 
@@ -87,7 +87,7 @@ This seamless hardware to software loop enables real time monitoring of the bicy
 <p><em>Figure 5 Speed Sensor Wiring connection through Arduino to simulator software</em></p>
 
 ### Connection Overview and Hardware
-The diagram above illustrates how the speed sensor module is connected to the Arduino Uno to enable rotational speed measurementon the Kickr Bike. Each pin on the sensor corresponds to a specific function and is wired directly to a compatible Arduino pin: **Power Supply (5 V & GND)** - The sensor is powered through the Arduino's 5 V and GND pins, connected to encoder wires **4** and **1** respectively. **Signal Pins (Channel A & B)** - Encoder wires **3** and **5** are used for signal transmission. They are connected to Arduino digital pins **D2 (INT0)** and **D3 (INT1)**, enabling the detection of rising/falling signal edges.
+The diagram above illustrates how the speed sensor module is connected to the Arduino Uno to enable rotational speed measurement on the Kickr Bike. Each pin on the sensor corresponds to a specific function and is wired directly to a compatible Arduino pin: **Power Supply (5 V & GND)** - The sensor is powered through the Arduino's 5 V and GND pins, connected to encoder wires **4** and **1** respectively. **Signal Pins (Channel A & B)** - Encoder wires **3** and **5** are used for signal transmission. They are connected to Arduino digital pins **D2 (INT0)** and **D3 (INT1)**, enabling the detection of rising/falling signal edges.
 
 This setup allows the Arduino to count encoder pulses and calculate speed using interrupts. Ensuring proper wiring is essential for accurate and reliable speed measurements. Please make sure to attach all wires carefully to your simulator to prevent tripping hazards and signal disconnection.
 ## Assembly Drawing and Bill of Materials (BOM)
@@ -101,12 +101,12 @@ This setup allows the Arduino to count encoder pulses and calculate speed using 
 <a id="Figure_7"></a>
 
 ![Figure_7](images/Figure_7_Exploded_View_Speed_Sensor.jpg)
-<p><em>Figure  7 Exploded View of the Speed Sensor</em></p>
+<p><em>Figure 7 Exploded View of the Speed Sensor</em></p>
 
 <a id="Figure_8"></a>
 
 ![Figure_8](images/Figure_8_Assembly_Drawing_Speed_Sensor.jpg)
-<p><em>Figure  8 Assembly Drawing of the Speed Sensor</em></p>
+<p><em>Figure 8 Assembly Drawing of the Speed Sensor</em></p>
 
 **Table 2 Bill of Materials (BOM)**
 
@@ -144,7 +144,7 @@ This setup allows the Arduino to count encoder pulses and calculate speed using 
 5. **Shimming Washers (DIN 988 8x0.2)**
 	These are used to fine-tune the axial position of the shaft or bearing typically one on each side or both behind a bearing to reduce slack.
 6. **Fillister Head Screws (M2.5 × 8)**
-	3 screws are used to fix the encoder onto the lever, and the the other two attaches the spring mechanism between the lever and joint flange. Total 5 screws are sufficient for a secure and functional setup
+	3 screws are used to fix the encoder onto the lever, and the other two attach the spring mechanism between the lever and joint flange. Total 5 screws are sufficient for a secure and functional setup
 7. **Position Ring (Clamp Ring)**
 	The position ring (clamp ring) is placed on the shaft to prevent it from sliding out or to secure it in position. One is enough per shaft in this context.
 8. **Shaft (Precision Steel 8h6)**
@@ -156,7 +156,7 @@ This setup allows the Arduino to count encoder pulses and calculate speed using 
 11. **Molex Socket Connector (5-pin)**
 	This connector enables the interface between the encoder and Arduino. One 5-channel connector matches the number of wires from the encoder.
 12. **Tension Spring**
-	The spring ensures that the measuring wheel maintains consistent contact with the flywheel of the Kickr Bike. Its tension allows the wheel to stay pressed against the surface, make sure it fits cleanly withou any irregularities. If a bump is encountered, the spring allows the measuring wheel to momentarily deflect and then return to contact. Such obstructions can often be identified by unusual noise during operation. To ensure accurate sensor readings, the flywheel surface should be kept clean and free of debris.
+	The spring ensures that the measuring wheel maintains consistent contact with the flywheel of the Kickr Bike. Its tension allows the wheel to stay pressed against the surface, make sure it fits cleanly without any irregularities. If a bump is encountered, the spring allows the measuring wheel to momentarily deflect and then return to contact. Such obstructions can often be identified by unusual noise during operation. To ensure accurate sensor readings, the flywheel surface should be kept clean and free of debris.
 # Building Instructions
 ## Mechanical Assembly
 The following steps provide a clear procedure to ensure your mechanical assembly of the Speed Sensor is precise and reliable.
@@ -176,7 +176,7 @@ Next, gather all the necessary hardware and adhesives:
 1. Place the sealing ring (Position 3) into the groove of the measuring wheel (Position 1).
 2. Apply a small amount of rapid glue around the joint.
 3. Press the pieces together firmly and wait a few seconds for the glue to set before continuing.
-4. Check the concentricity of the sealing ring outer diameter with the bore of the measuring wheel. Use a belt grinder to grind of any eccentricity at the sealing ring and to give it a flat outer circumference which connects thoroughly to the flywheel of the Kickr Bike later.
+4. Check the concentricity of the sealing ring outer diameter with the bore of the measuring wheel. Use a belt grinder to grind off any eccentricity at the sealing ring and to give it a flat outer circumference which connects thoroughly to the flywheel of the Kickr Bike later.
 #### 3. Assembling the Lever and Bearing Stack (“Sandwich”)
 1. Insert both ball bearings (Position 4) into the outer sides of the lever arm (Position 8).
 2. From the other side, push the wheel shaft (Position 7) through this bearing until it just passes through.
@@ -191,10 +191,10 @@ Next, gather all the necessary hardware and adhesives:
 5. Remove the hex key from the encoder and close the opening in the encoder housing by turning the cap according to the suppliers manual.
 #### 5. Attaching the Joint Flange and Spring
 1. Slide the joint shaft (Position 11) through the flange, then through the lever sub-assembly so it extends out the other side.
-2. Insert one _M2.5 x 8_ fillister head screw into the Joint Flage and one into the lever. Hook the tension spring (Position 12) onto the screw heads in the lever arm on one end and on the flange on the other end. Once installed on the Kickr Bike this provides a restoring force that pulls the measuring wheel against the flywheel of the Kickr Bike.
+2. Insert one _M2.5 x 8_ fillister head screw into the Joint Flange and one into the lever. Hook the tension spring (Position 12) onto the screw heads in the lever arm on one end and on the flange on the other end. Once installed on the Kickr Bike this provides a restoring force that pulls the measuring wheel against the flywheel of the Kickr Bike.
 #### 6. Connecting the Wiring and Securing the Clip
 1. Prepare the wiring: Crimp the wires onto the encoder-compatible pins
-2. Push the pins into the connector socket and make sure to push them into the right socket holes according to the connection plan (shown in Figure 3 and 4 above). 
+2. Push the pins into the connector socket and make sure to push them into the right socket holes according to the connection plan (shown in [Figure 3](#Figure_3) and [Figure 4](#Figure_4) above). 
 3. Plug the connector housing (Position 10) onto the encoder pins.
 4. Secure the connection by screwing on the 3D-printed locking clip over the joined connectors to prevent accidental disconnection.
 #### 7. Final Assembly and Testing
