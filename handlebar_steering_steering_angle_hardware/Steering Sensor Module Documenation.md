@@ -1,16 +1,16 @@
 ---
-title: Steering Sensor Module Documenation
+title: Steering Sensor Module Documentation
 tags:
   - OpenBikeSim
   - bicycling_simulator
 date created: 2026-01-22
 version: "1.0"
 ---
-This documentation explains how to manufacture and assemble a handle bar with steer angle measuring sensor for application in bicycling simulator. 
+This documentation explains how to manufacture and assemble a handle bar with steer angle measuring sensor for application in a bicycling simulator. 
 # Introduction 
 In a virtual reality bicycling simulator, steering input plays a crucial role in bringing realism to the experience. While pedalling dynamics and resistance are commonly addressed through standard trainer setups, accurate and responsive steering is not readily available as off-the-shelf product.
 To enable low-latency, high-precision steering in the simulator, we integrated a dedicated sensor module into the handlebar assembly. At the core of this module is an absolute rotary encoder that directly measures the steering angle as the user turns the handlebars. Unlike incremental encoders or other indirect sensors, the absolute encoder provides a stable, always-referenced angle meaning it never loses track of its position, even if the system is restarted or repositioned.
-The encoder is mounted at the base of the handlebar stem and mechanically coupled to the rotation axis. The angle data is read by an Arduino Uno the same microcontroller that handles speed measurement which processes the signal and converts the raw sensor output into rotational degrees. The converted data is then sent to the simulation PC using UDP over Ethernet, where it is interpreted by the CARLA environment in real time. This setup ensures minimal latency and smooth, continuous steering input within the simulation.
+The encoder is mounted at the base of the handlebar stem and mechanically coupled to the rotation axis. The angle data is read by an Arduino Uno, the same microcontroller that handles speed measurement, which processes the signal and converts the raw sensor output into rotational degrees. The converted data is then sent to the simulation PC using UDP over Ethernet, where it is interpreted by the CARLA environment in real time. This setup ensures minimal latency and smooth, continuous steering input within the simulation.
 The goal of this documentation is to describe the steering sensor module as an open-source component of the simulator. It includes all necessary information to replicate the hardware setup, interface it with the Arduino, and integrate it into your simulator hardware. The software is documented in a separate document. By providing both technical detail and practical assembly guidance, this documentation supports reuse, modification, and further development in similar simulator projects.
 
 <a id="Figure_1"></a>
@@ -73,7 +73,7 @@ With the functional role of the steering sensor established, the next section ou
 ### Connection Overview and Hardware
 The diagram above shows how the steering sensor is connected to the Arduino Uno to enable real-time angle detection on the Kickr Bike. The sensor used here is a 10-bit absolute rotary encoder, and it communicates with the Arduino via a simple synchronous serial interface. Each of its wires serves a specific function and is routed to a corresponding Arduino pin:
 
-Power Supply (5 V & GND) -- The encoder is powered through the Arduino's 5 V and GND pins, connected to the encoder's red (VCC) and violet (GND) wires respectively.
+Power Supply (5 V & GND) -- The encoder is powered through the Arduino's 5 V and GND pins, connected to the encoder's red (VCC) and yellow (GND) wires respectively.
 
 Signal Pins (DO, CLK, CS) -- The encoder's three communication lines are:
 - DO (Data Out) -- orange wire, connected to Arduino digital pin D7, used to read the angular data.
@@ -132,7 +132,7 @@ The following steps provide a clear procedure to ensure your mechanical assembly
 15. The core steering assembly is complete. Mount the unit via the **steer tube adapter (12)** on the bicycling simulator. Then install the **handlebar assembly (11)** as usual.
 ## 3D Print Information 
 
-To fabricate the mechanical components of the speed sensor system, we employed Fused Filament Fabrication (FFF) (a common 3D printing method that extrudes molten plastic layer by layer) using a Prusa i3 MK3 3D printer. This section provides key technical parameters and setup configurations to ensure reproducibility of the print results with similar quality and structural integrity.
+To fabricate the mechanical components of the steering sensor system, we employed Fused Filament Fabrication (FFF) (a common 3D printing method that extrudes molten plastic layer by layer) using a Prusa i3 MK3 3D printer. This section provides key technical parameters and setup configurations to ensure reproducibility of the print results with similar quality and structural integrity.
 
  **Table 3 3D printing information**
 
