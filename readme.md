@@ -27,3 +27,79 @@ See [LICENSE_SOFTWARE](LICENSE_SOFTWARE) for details.
 ### Hardware
 The hardware designs in this repository are licensed under the **CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN OHL-S)**.
 See [LICENSE_HARDWARE](LICENSE_HARDWARE) for details.
+
+---
+
+## Module Documentation Preview
+
+> 🚧 **Work in Progress** — This section is still being expanded. Content and formatting may change.
+
+![Status](https://img.shields.io/badge/status-work%20in%20progress-yellow)
+![Version](https://img.shields.io/badge/version-1.0-blue)
+![License Hardware](https://img.shields.io/badge/hardware-CERN%20OHL--S%20v2-green)
+![License Software](https://img.shields.io/badge/software-GPLv3-blue)
+![University](https://img.shields.io/badge/BUW-Chair%20of%20Bicycle%20Traffic-orange)
+
+This section gives a closer look at the three hardware modules currently documented in this repository. All of them were built and tested as part of the TiptoP bicycling simulator at the University of Wuppertal. They are designed to be reproducible, open-source, and easy to integrate into similar simulator setups. Each module uses an Arduino Uno for signal processing and communicates with the simulation PC via UDP over Ethernet.
+
+---
+
+### 🚲 Speed Sensor Module
+📁 [pedalling_resistance_speed_sensor_hardware](https://github.com/buw-bicycle-traffic/TiptoP-bicycling-simulator-modules/tree/main/pedalling_resistance_speed_sensor_hardware)
+
+The Wahoo Kickr Bike only outputs speed at 1 Hz over Bluetooth, which is far too slow for a responsive simulation. This module fixes that. A friction wheel is pressed against the Kickr's flywheel using a spring loaded pivoting arm, and an optical incremental encoder with 1000 counts per revolution picks up the rotation. With the gear ratio of the coupling mechanism, this results in an effective resolution of 20,000 counts per crank revolution and update rates between 10,000 and 30,000 Hz depending on cadence. The signal goes straight to the simulation PC via wired Ethernet, cutting latency to near zero.
+
+The documentation covers everything needed to build and wire the module from scratch, including a full bill of materials, assembly instructions, wiring diagrams, and 3D print files for the custom parts.
+
+**What you will find in the documentation:**
+
+| Section | Content |
+| ------- | ------- |
+| Technical Overview | System integration, wiring to Arduino, signal flow |
+| Assembly Instructions | Step by step mechanical build guide |
+| Bill of Materials | All parts with links and specifications |
+| 3D Print Information | Print settings, layout, and G-code file path |
+| Software | Link to the Arduino and UDP communication code |
+
+---
+
+### 🎯 Steering Sensor Module
+📁 [handlebar_steering_steering_angle_hardware](https://github.com/buw-bicycle-traffic/TiptoP-bicycling-simulator-modules/tree/main/handlebar_steering_steering_angle_hardware)
+
+Accurate steering is one of the harder things to get right in a bicycling simulator. This module integrates a 10-bit absolute rotary encoder (Bourns EMS22A50) directly into the handlebar stem assembly. Because it is an absolute encoder, it always knows its position from the moment it powers on, no homing or recalibration needed. The encoder is housed in a custom 3D printed enclosure that mounts cleanly to the steering column, and a torsion spring keeps the handlebars centered when not in use.
+
+The steer angle is read by the Arduino via SPI, converted to degrees, and sent to CARLA over UDP. The result is smooth, low latency steering that feels natural to ride.
+
+**What you will find in the documentation:**
+
+| Section | Content |
+| ------- | ------- |
+| Technical Overview | Encoder integration, SPI wiring, signal flow |
+| Assembly Instructions | Full step by step build including bearing stack and spring |
+| Bill of Materials | All parts with links and specifications |
+| 3D Print Information | Print settings, layout, and G-code file path |
+| Software | Link to the Arduino and UDP communication code |
+
+---
+
+### 🛑 Brake Module
+📁 [brake_hand_brake_hardware](https://github.com/buw-bicycle-traffic/TiptoP-bicycling-simulator-modules/tree/main/brake_hand_brake_hardware)
+
+This module turns a standard bicycle brake lever into a force sensor. A miniature load cell is embedded inside a custom 3D printed housing that screws directly into the brake lever in place of the cable adjuster. When the rider squeezes the lever, the brake cable pulls on a pressure cylinder which pushes against the load cell. The signal is amplified by a Burr-Brown INA125 instrumentation amplifier, read by the Arduino, and sent to the simulation PC via UDP.
+
+The whole assembly mounts solely on the handlebar, no calipers or mechanical braking involved. It is compact, easy to install, and works with the Avid Speed Dial 7 brake lever out of the box.
+
+**What you will find in the documentation:**
+
+| Section | Content |
+| ------- | ------- |
+| Technical Overview | Load cell integration, signal amplification, wiring |
+| Manufacturing Instructions | Machining the bolt, 3D printing, circuit board assembly |
+| Bill of Materials | All parts with links and specifications |
+| 3D Print Information | Print settings, layout, and G-code file path |
+| Software | Link to the Arduino and UDP communication code |
+| Known Limitations | Honest notes on what could be improved in future versions |
+
+---
+
+> 📬 For questions about any of the modules, reach out via this repository or at bicycletraffic@uni-wuppertal.de.
