@@ -49,17 +49,7 @@ This section gives a closer look at the three hardware modules currently documen
 
 The Wahoo Kickr Bike only outputs speed at 1 Hz over Bluetooth, which is far too slow for a responsive simulation. This module fixes that. A friction wheel is pressed against the Kickr's flywheel using a spring loaded pivoting arm, and an optical incremental encoder with 1000 counts per revolution picks up the rotation. With the gear ratio of the coupling mechanism, this results in an effective resolution of 20,000 counts per crank revolution and update rates between 10,000 and 30,000 Hz depending on cadence. The signal goes straight to the simulation PC via wired Ethernet, cutting latency to near zero.
 
-The documentation covers everything needed to build and wire the module from scratch, including a full bill of materials, assembly instructions, wiring diagrams, and 3D print files for the custom parts.
-
-**What you will find in the documentation:**
-
-| Section | Content |
-| ------- | ------- |
-| Technical Overview | System integration, wiring to Arduino, signal flow |
-| Assembly Instructions | Step by step mechanical build guide |
-| Bill of Materials | All parts with links and specifications |
-| 3D Print Information | Print settings, layout, and G-code file path |
-| Software | Link to the Arduino and UDP communication code |
+The documentation starts with a technical overview of the system integration and signal flow, followed by the full wiring scheme to the Arduino. From there it goes into the step by step mechanical assembly of the friction wheel arm, encoder mounting, and spring mechanism. A complete bill of materials lists all parts with links and specifications. The 3D print section covers the print settings and G-code layout for the custom printed components. The software is documented in a linked external repository.
 
 ---
 
@@ -70,15 +60,7 @@ Accurate steering is one of the harder things to get right in a bicycling simula
 
 The steer angle is read by the Arduino via SPI, converted to degrees, and sent to CARLA over UDP. The result is smooth, low latency steering that feels natural to ride.
 
-**What you will find in the documentation:**
-
-| Section | Content |
-| ------- | ------- |
-| Technical Overview | Encoder integration, SPI wiring, signal flow |
-| Assembly Instructions | Full step by step build including bearing stack and spring |
-| Bill of Materials | All parts with links and specifications |
-| 3D Print Information | Print settings, layout, and G-code file path |
-| Software | Link to the Arduino and UDP communication code |
+The documentation covers the full system integration and SPI wiring to the Arduino, followed by a detailed assembly guide that walks through the bearing stack, spring installation, encoder housing and cable routing. The bill of materials includes all off-the-shelf and custom parts. 3D print settings and G-code layout are documented for all printed components. The software is covered in a linked external repository.
 
 ---
 
@@ -89,16 +71,7 @@ This module turns a standard bicycle brake lever into a force sensor. A miniatur
 
 The whole assembly mounts solely on the handlebar, no calipers or mechanical braking involved. It is compact, easy to install, and works with the Avid Speed Dial 7 brake lever out of the box.
 
-**What you will find in the documentation:**
-
-| Section | Content |
-| ------- | ------- |
-| Technical Overview | Load cell integration, signal amplification, wiring |
-| Manufacturing Instructions | Machining the bolt, 3D printing, circuit board assembly |
-| Bill of Materials | All parts with links and specifications |
-| 3D Print Information | Print settings, layout, and G-code file path |
-| Software | Link to the Arduino and UDP communication code |
-| Known Limitations | Honest notes on what could be improved in future versions |
+The documentation includes the technical overview of the load cell integration and amplifier circuit, wiring instructions referencing the University of Chicago load cell guide, and a full mechanical assembly walkthrough including machining the custom steel bolt and soldering the amplifier circuit board. The bill of materials covers all parts with links and specifications. 3D print settings are included for the printed housing components. The documentation also has an honest section on known limitations and potential improvements for future versions. The software is covered in a linked external repository.
 
 ---
 
