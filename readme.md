@@ -3,7 +3,7 @@
 This repository contains all documentations for modules added to the bicycling simulator developed at the [Chair of Bicycle Traffic](https://radverkehr.uni-wuppertal.de/en/) at the University of Wuppertal. 
 The TiptoP Bicycling simulator has been developed and applied for research on bicyclists' behaviour from 2022 until present. 
 
-For questions and feedback please contact us via this repository or via e-mail to bicycletraffic@uni-wuppertal.de.
+For questions and feedback please contact us via this repository or via e-mail to radverkehr@uni-wuppertal.de.
 
 <a id="Figure_1"></a>
 ![Figure_1](pedalling_resistance_speed_sensor_hardware/images/Figure_1_System_overview_Sensors_and_actuators.png)
@@ -75,4 +75,4 @@ The documentation includes the technical overview of the load cell integration a
 
 ---
 
-> 📬 For questions about any of the modules, reach out via this repository or at bicycletraffic@uni-wuppertal.de.
+> 📬 For questions about any of the modules, reach out via this repository or at radverkehr@uni-wuppertal.de.
