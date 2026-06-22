@@ -18,18 +18,6 @@ Currently, documentation for following modules is available on this repository:
 | **hand brake sensor**                   | brake                | [brake_hand_brake_hardware](https://github.com/buw-bicycle-traffic/TiptoP-bicycling-simulator-modules/tree/main/brake_hand_brake_hardware)                  | Brake lever assembly converting the manual brake force to an electronic output signal using a load cell.                            |
 | **how-to create environments in CARLA** | environment          | [virtual_environment_module](https://github.com/buw-bicycle-traffic/TiptoP-bicycling-simulator-modules/tree/main/virtual_environment_module)           | Documentation describing how to create virtual environments for bicycling simulators with CARLA will be added soon.                                    |
 
-## Licensing
-
-### Software
-The software in this repository is licensed under the **GNU General Public License v3 (GPLv3)**.
-See [LICENSE_SOFTWARE](LICENSE_SOFTWARE) for details.
-
-### Hardware
-The hardware designs in this repository are licensed under the **CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN OHL-S)**.
-See [LICENSE_HARDWARE](LICENSE_HARDWARE) for details.
-
----
-
 ## Module Documentation Preview
 
 > 🚧 **Work in Progress** — This section is still being expanded. Content and formatting may change.
@@ -76,3 +64,15 @@ The documentation includes the [technical overview](https://github.com/buw-bicyc
 ---
 
 > 📬 For questions about any of the modules, reach out via this repository or at radverkehr@uni-wuppertal.de.
+
+---
+
+## Licensing
+
+### Software
+The software in this repository is licensed under the **GNU General Public License v3 (GPLv3)**.
+See [LICENSE_SOFTWARE](https://github.com/buw-bicycle-traffic/TiptoP-bicycling-simulator-modules/blob/main/LICENSE_SOFTWARE.txt) for details.
+
+### Hardware
+The hardware designs in this repository are licensed under the **CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN OHL-S)**.
+See [LICENSE_HARDWARE](https://github.com/buw-bicycle-traffic/TiptoP-bicycling-simulator-modules/blob/main/LICENSE_HARDWARE.txt) for details.
