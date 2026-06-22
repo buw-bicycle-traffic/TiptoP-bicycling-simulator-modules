@@ -54,9 +54,9 @@ py -V
 py -m pip -V
 
 ```
-    If an error returns for Python, reinstall it and give it the required PATH so it can be called in the Command Prompt. Alternatively, you can manually add it to the PATH in System Variables.
+If an error returns for Python, reinstall it and give it the required PATH so it can be called in the Command Prompt. Alternatively, you can manually add it to the PATH in System Variables.
 
-    If an error returns for pip, type the following into the command line:
+If an error returns for pip, type the following into the command line:
 
   
 
@@ -84,7 +84,7 @@ py -m pip install --upgrade pip
 py -m pip install -r pipreq.txt
 
 ```
-    Or with a full path:
+Or with a full path:
 
   
 
@@ -92,9 +92,9 @@ py -m pip install -r pipreq.txt
 py -m pip install -r C:/Users/example/downloads/pipreq.txt
 
 ```
-    [Download Pip Requirements Text](https://raw.githubusercontent.com/buw-bicycle-traffic/TiptoP-bicycling-simulator-modules/main/virtual_environment_module/pipreq.txt)
+[Download Pip Requirements Text](https://raw.githubusercontent.com/buw-bicycle-traffic/TiptoP-bicycling-simulator-modules/main/virtual_environment_module/pipreq.txt)
 
-    :::note
+:::note
 This link may not download the text file directly — you may need to copy the text from the new tab and save it as `pipreq.txt` manually.
 :::
 
@@ -139,7 +139,7 @@ Microsoft notes that this unserviced installer may be susceptible to CVE-2024-29
 cd C:
 
 ```
-    or type `cd ..` repeatedly until you reach the highest folder of the drive. Then clone the Unreal Engine repository. **Note:** This file is quite large and will take up over 100 GB of space. Make sure your drive has sufficient space before proceeding.
+or type `cd ..` repeatedly until you reach the highest folder of the drive. Then clone the Unreal Engine repository. **Note:** This file is quite large and will take up over 100 GB of space. Make sure your drive has sufficient space before proceeding.
 
   
 
@@ -216,7 +216,7 @@ cd C:
 git clone https://github.com/carla-simulator/carla
 
 ```
-    Or for a specific version (we recommend the most recent):
+Or for a specific version (we recommend the most recent):
 
   
 
