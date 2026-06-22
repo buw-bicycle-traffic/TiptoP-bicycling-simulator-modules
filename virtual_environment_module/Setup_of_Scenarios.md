@@ -14,21 +14,21 @@ To start out creating our custom map, we will start by using Blender to create t
 
 2. Once open, we will open up Blosm on the side of Blender
 
-![Blender1](https://bicyclesimulator.onrender.com/assets/images/Blender1-9daeb98c2e2e540e183f07b0c5556685.png)
+![Blender1](images/Blender1.jpg)
 
-![Blender2](https://bicyclesimulator.onrender.com/assets/images/Blender2-e46594e4e3af944b56df1bd38fa76aa7.png)
+![Blender2](images/Blender2.jpg)
 
 3. Now we will select our area of interest using the select button on Blosm, which will open a tab to a map. Here you can select the area you want to create a scenario for. It is recommended that the area be a bit bigger than your interested area, to add more realism and space to your custom map
 
-![Blender3](https://bicyclesimulator.onrender.com/assets/images/Blender3-d5a062909b3c1de9a1bebb4a1579d064.jpg)
+![Blender3](images/Blender3.jpg)
 
 4. Once you have your area, copy the selected area using the website instruction on the right side and then paste those coordinates into Blosm with the paste button
 
-![Blender4](https://bicyclesimulator.onrender.com/assets/images/Blender4-c37b002af24aea3643ebeb88c0443000.jpg)
+![Blender4](images/Blender4.jpg)
 
 5. Once pasted, you can now add elevation data to your Blender file by using the terrain import function. In the section below the coordinates, you can select terrain and then click on the import button
 
-![Blender5](https://bicyclesimulator.onrender.com/assets/images/Blender5-a0e2df9e070faff08567d672ea4c052c.jpg)
+![Blender5](images/Blender5.jpg)
 
 6. Once a gray plane with the terrain data has been imported, you can now add buildings to your file
 
@@ -36,7 +36,7 @@ To start out creating our custom map, we will start by using Blender to create t
 
 8. Before you select import, make sure to select Import for Export, Import Buildings, and Relative to Initial Import and then deselect Import as a Single Object and Import Forest
 
-![Blender6](https://bicyclesimulator.onrender.com/assets/images/Blender6-b036b775072ea08100a56bbad8d18bce.jpg)
+![Blender6](images/Blender6.jpg)
 
 9. Now import the buildings by clicking import
 
@@ -44,7 +44,7 @@ To start out creating our custom map, we will start by using Blender to create t
 
 11. Now that you have the buildings for your custom map, you can export these buildings by firstly selecting all the buildings under the Map_XX.osm_buildings
 
-![Blender7](https://bicyclesimulator.onrender.com/assets/images/Blender7-8ca48ad3c5dc95831da6454270bc43f5.png)
+![Blender7](images/Blender7.jpg)
 
 12. Then under file, click Export and use FBX to export your file
 
@@ -74,7 +74,7 @@ To best represent your area of interest, elevation data is important. This data 
 
 [QGIS Interpolation Video](https://www.youtube.com/watch?v=kAvGW0yH6_E&embeds_referring_euri=https%3A%2F%2Fcdn.iframe.ly%2F&source_ve_path=Mjg2NjY&feature=emb_logo)
 
-![QGIS Photo](https://bicyclesimulator.onrender.com/assets/images/QGIS-71c5f7ac69b47599ab55919c7eea3765.png)
+![QGIS Photo](images/QGIS.jpg)
 
 In NRW for example, LiDAR contour vector data is available from the state. This can be imported into QGIS, enriched with an Elevation attribute via the field calculator, then processed through the TIN interpolation tool to produce a raster surface. A raster resample interpolation (via GRASS tools) can further smooth the result before exporting in WGS 84 coordinate system.
 
@@ -84,11 +84,11 @@ Now with all the important data for RoadRunner — OSM and topography — we can
 
 1. Create a new project in RoadRunner
 
-![Roadrunner1](https://bicyclesimulator.onrender.com/assets/images/RR1-74cb40dd3f55bda768832d311e69b426.jpg)
+![Roadrunner1](images/RR1.jpg)
 
 2. Create a new scene
 
-![Roadrunner2](https://bicyclesimulator.onrender.com/assets/images/RR2-8e4d414d32df5fb3e10408de66af03a8.jpg)
+![Roadrunner2](images/RR2.jpg)
 
 3. Now with a new scene open, we can start creating the map
 
@@ -96,15 +96,15 @@ Now with all the important data for RoadRunner — OSM and topography — we can
 
 5. Your files should look like this — one containing the topography data and one containing the OSM data
 
-![Roadrunner3](https://bicyclesimulator.onrender.com/assets/images/RR3-a6996b310b2f0af5549410724d59b5ca.png)
+![Roadrunner3](images/RR3.jpg)
 
 6. Right-click on the topography data and select topography to ensure it is set to the correct default type
 
-![Roadrunner4](https://bicyclesimulator.onrender.com/assets/images/RR4-3b49164e1565dd7c00989c502bf0d04d.jpg)
+![Roadrunner4](images/RR4.jpg)
 
 7. Drag both OSM and topography data into the scene. Press F5 and F7 if the data does not appear automatically
 
-![Roadrunner5](https://bicyclesimulator.onrender.com/assets/images/RR5-10ed4af938ed97d888b3cd73ed1d139a.png)
+![Roadrunner5](images/RR5.jpg)
 
 8. If the OSM map appears too cluttered, remove it and re-add only the road network using the SD Map Viewer Tool
 
@@ -112,43 +112,43 @@ Now with all the important data for RoadRunner — OSM and topography — we can
 
 10. Add topography to the roads by clicking Project Roads on the left side of the program
 
-![Roadrunner6](https://bicyclesimulator.onrender.com/assets/images/RR6-e0679b2e926449a0a22d253f0614fff1.jpg)
+![Roadrunner6](images/RR6.jpg)
 
 11. If sharp corners appear due to elevation issues at intersections, adjust the road profile in the bottom left. The blue line is terrain elevation, the purple line is the selected road, and the green line is the intersecting road
 
-![Roadrunner7](https://bicyclesimulator.onrender.com/assets/images/RR7_1-db98ded8246120a5014722e1cc913c56.png)
+![Roadrunner7](images/RR7.jpg)
 
 12. Apply a RoadStyle by dragging it from the RoadStyles folder to a road segment. Edit lanes, widths, and directions as needed
 
-![Roadrunner8](https://bicyclesimulator.onrender.com/assets/images/RR8-e8408f1fb3f3495f2b1ad8f28ae5769d.png)
+![Roadrunner8](images/RR8.jpg)
 
 13. Add lanes using the Lane Add tool. Lanes are added outward from the road's center axis. The Lane Form and Lane Carve tools add and subtract from an existing road
 
-![Roadrunner9](https://bicyclesimulator.onrender.com/assets/images/RR9-26bffbc8d9304591149f5e5a1f3b4c66.jpg)
+![Roadrunner9](images/RR9.jpg)
 
 14. Specify lane types from the list on the right side of the program
 
-![Roadrunner10](https://bicyclesimulator.onrender.com/assets/images/RR10-233544f4b09b777b018b21e5b2d172ad.png)
+![Roadrunner10](images/RR10.jpg)
 
 15. Adjust lane widths using the Lane Width tool
 
-![Roadrunner11](https://bicyclesimulator.onrender.com/assets/images/RR11-370991827fbbe678d3181fad2c4af1ef.jpg)
+![Roadrunner11](images/RR11.jpg)
 
 16. Change traffic direction and access restrictions using the Lane tool. Note that when changing a lane type (e.g. driving to bicycle), access restrictions must be set manually — they do not update automatically
 
 17. For special intersections, use the Custom Junction tool
 
-![Roadrunner14](https://bicyclesimulator.onrender.com/assets/images/RR14-2ccf1806b7c16df5c3ec4deb8137b4ed.jpg)
+![Roadrunner14](images/RR14.jpg)
 
 18. Verify intersections using the Maneuver tool. Add or delete maneuvers as needed. Use Rebuild Maneuver Roads to reset an intersection
 
-![Roadrunner15](https://bicyclesimulator.onrender.com/assets/images/RR15-44029c07ae37438924ec523a5c061c91.jpg)
+![Roadrunner15](images/RR15.jpg)
 
-![Roadrunner16](https://bicyclesimulator.onrender.com/assets/images/RR16-eabf3064c7d0a0fef6b63e8642b8b3fa.png)
+![Roadrunner16](images/RR16.jpg)
 
 19. Terrain surfaces are created automatically when road segments form a closed loop, or can be added manually using the Surface tool. Apply GIS elevation data to surfaces using Apply GIS Data
 
-![Roadrunner17](https://bicyclesimulator.onrender.com/assets/images/RR17-8bd2fc11f75b9c76453525cb03f8af1e.jpg)
+![Roadrunner17](images/RR17.jpg)
 
 ![Roadrunner18](https://bicyclesimulator.onrender.com/assets/images/RR18-f391e7946acf98efaf662a47866d9222.png)
 
@@ -164,11 +164,11 @@ Now with all the important data for RoadRunner — OSM and topography — we can
 
 1. Check the network for errors using the OpenDRIVE Export Preview tool. Accept the standard settings and press Export
 
-![RRexport01](https://bicyclesimulator.onrender.com/assets/images/RREX01-05f70afe46ba0c44c952593cbd1eac90.jpg)
+![RRexport01](images/RREX01.jpg)
 
 2. Fix any errors shown in the output log. Some warnings (e.g. intersections combined due to proximity) can be ignored — others should be addressed
 
-![RRexport02](https://bicyclesimulator.onrender.com/assets/images/RREX02-2af71613f311d8022f20e4e0a7687eff.jpg)
+![RRexport02](images/RREX02.jpg)
 
 3. Once the preview looks correct, export via File → Export → CARLA Filmbox (.fbx, .xodr, .rrdata.xml)
 
@@ -208,7 +208,7 @@ make launch
 
 7. If imported correctly, the map will be under map_package → Maps. Open the scene folder and double-click the orange level item
 
-![RRexport03](https://bicyclesimulator.onrender.com/assets/images/RREX03-af6ce52546ba13c343d8a652ac85f67d.jpg)
+![RRexport03](images/RREX03.jpg)
 
 8. Test the import by running the traffic generation script in a separate Command Prompt:
 
@@ -234,23 +234,23 @@ Traffic signs and signals can be added using CARLA's prebuilt signage and traffi
 
 1. Enter foliage mode via the top toolbar
 
-![CARLAVEG01](https://bicyclesimulator.onrender.com/assets/images/CAVEG01-528f6acd6bf91fe1706e91ca6cee6416.jpg)
+![CARLAVEG01](images/CAVEG01.jpg)
 
 2. Foliage assets are found under Content → Carla → Static → Vegetation. Drag foliage into the paint tool menu
 
-![CARLAVEG02](https://bicyclesimulator.onrender.com/assets/images/CAVEG02-f1a1489ac750f6fc7c3e5ee498986d00.jpg)
+![CARLAVEG02](images/CAVEG02.jpg)
 
 3. Adjust density, spacing, scaling, and other parameters before painting
 
-![CARLAVEG03](https://bicyclesimulator.onrender.com/assets/images/CAVEG03-210ce6a566ba89d37dfec4d2930e7251.jpg)
+![CARLAVEG03](images/CAVEG03.jpg)
 
 4. Paint terrain by left-clicking. Use the checkbox on each foliage item to toggle it on and off
 
-![CARLAVEG04](https://bicyclesimulator.onrender.com/assets/images/CAVEG04-59199f6c9e84028dacdd6961ce86afb8.jpg)
+![CARLAVEG04](images/CAVEG04.jpg)
 
 5. To prevent foliage painting onto roads or buildings, select the terrain object and change its Mobility from Static to Movable in the Details panel
 
-![CARLAVEG05](https://bicyclesimulator.onrender.com/assets/images/CAVEG05-d885d381342be47a01f9dce967a4095e.jpg)
+![CARLAVEG05](images/CAVEG05.jpg)
 
 ---
 
