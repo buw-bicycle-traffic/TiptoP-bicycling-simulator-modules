@@ -275,7 +275,7 @@ make PythonAPI
 .\pip freeze | %{$_.split('==')[0]} | %{pip install --upgrade $_}
 
 ```
-    :::note
+:::note
 Make sure to include `.\` before `pip` as shown above, otherwise the command may not execute correctly.
 :::
 
