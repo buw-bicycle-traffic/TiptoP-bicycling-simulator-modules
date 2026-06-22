@@ -14,80 +14,80 @@ The CARLA build depends on several other applications that need to be installed 
 
 1. **Download and install CMAKE** (version 3.9.0 or higher)
 
-   [Download CMAKE](https://cmake.org/download/)
+    [Download CMAKE](https://cmake.org/download/)
 
 2. **Download and install Git**
 
-   [Download Git](https://git-scm.com/download/win)
+    [Download Git](https://git-scm.com/download/win)
 
 3. **Download and install Chocolatey**, then install Make through PowerShell
 
-   [Installing Chocolatey](https://chocolatey.org/install)
+    [Installing Chocolatey](https://chocolatey.org/install)
 
-   Once Chocolatey is installed, open PowerShell and type:
+    Once Chocolatey is installed, open PowerShell and type:
 
-   ```
-   choco install make
-   ```
+```
+choco install make
+```
 
 4. **Download and install 7-Zip**
 
-   Make sure it has access to all users and allow it to unpack all items. It is recommended to install with admin access.
+    Make sure it has access to all users and allow it to unpack all items. It is recommended to install with admin access.
 
-   [Download 7-Zip](https://www.7-zip.org/download.html)
+    [Download 7-Zip](https://www.7-zip.org/download.html)
 
 5. **Install Python 3.14.3**
 
-   Make sure to check the box to add Python to the PATH during installation.
+    Make sure to check the box to add Python to the PATH during installation.
 
-   [Download Python 3.14.3](https://www.python.org/downloads/release/python-3143/)
+    [Download Python 3.14.3](https://www.python.org/downloads/release/python-3143/)
 
 6. Once Python is installed, check if Python and pip are installed by typing the following into the Command Prompt:
 
-   ```
-   py -V
-   py -m pip -V
-   ```
+```
+py -V
+py -m pip -V
+```
 
-   If an error returns for Python, reinstall it and give it the required PATH so it can be called in the Command Prompt. Alternatively, you can manually add it to the PATH in System Variables.
+    If an error returns for Python, reinstall it and give it the required PATH so it can be called in the Command Prompt. Alternatively, you can manually add it to the PATH in System Variables.
 
-   If an error returns for pip, type the following into the command line:
+    If an error returns for pip, type the following into the command line:
 
-   ```
-   py get-pip.py
-   ```
+```
+py get-pip.py
+```
 
 7. If no error returns, continue to the next step.
 
 8. Next, make sure pip is up to date by typing in the Command Line:
 
-   ```
-   py -m pip install --upgrade pip
-   ```
+```
+py -m pip install --upgrade pip
+```
 
 9. Install the required pip packages using the command below. You may need to direct pip to the correct folder to find the `pipreq.txt` file:
 
-   ```
-   py -m pip install -r pipreq.txt
-   ```
+```
+py -m pip install -r pipreq.txt
+```
 
-   Or with a full path:
+    Or with a full path:
 
-   ```
-   py -m pip install -r C:/Users/example/downloads/pipreq.txt
-   ```
+```
+py -m pip install -r C:/Users/example/downloads/pipreq.txt
+```
 
-   [Download Pip Requirements Text](https://bicyclesimulator.onrender.com/assets/files/pipreq-c1c9f3104ce74e105ffe94e4366b6eae.txt)
+    [Download Pip Requirements Text](https://raw.githubusercontent.com/buw-bicycle-traffic/TiptoP-bicycling-simulator-modules/main/virtual_environment_module/pipreq.txt)
 
-   :::note
-   This link may not download the text file directly — you may need to copy the text from the new tab and save it as `pipreq.txt` manually.
-   :::
+    :::note
+This link may not download the text file directly — you may need to copy the text from the new tab and save it as `pipreq.txt` manually.
+:::
 
 10. Once these packages are installed, validate their installation by typing:
 
-    ```
-    py -m pip list
-    ```
+```
+py -m pip list
+```
 
 11. **Install Visual Studio 2022**
 
@@ -96,17 +96,18 @@ The CARLA build depends on several other applications that need to be installed 
     [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/)
 
 12. When installing Visual Studio, make sure to also install the following packages via the package manager:
-    - **x64 Visual C++ Toolset**
-    - **Python tools**
-    - **.NET Framework 4.6.2**
+
+  - **x64 Visual C++ Toolset**
+  - **Python tools**
+  - **.NET Framework 4.6.2**
 
 13. After installation is complete, also install the **Windows 8.1 SDK** add-on. This is a legacy version required for the CARLA build.
 
     [Windows SDK Archive — Download Windows 8.1 SDK](https://learn.microsoft.com/en-us/windows/apps/windows-sdk/downloads-archive)
 
     :::note
-    Microsoft notes that this unserviced installer may be susceptible to CVE-2024-29187. Install with awareness of this, as it is required for the CARLA build.
-    :::
+Microsoft notes that this unserviced installer may be susceptible to CVE-2024-29187. Install with awareness of this, as it is required for the CARLA build.
+:::
 
 14. Now with everything installed we can start building Unreal Engine for CARLA.
 
@@ -114,84 +115,84 @@ The CARLA build depends on several other applications that need to be installed 
 
 16. Navigate to the root of your drive. Type:
 
-    ```
-    cd C:
-    ```
+```
+cd C:
+```
 
     or type `cd ..` repeatedly until you reach the highest folder of the drive. Then clone the Unreal Engine repository. **Note:** This file is quite large and will take up over 100 GB of space. Make sure your drive has sufficient space before proceeding.
 
-    ```
-    git clone --depth 1 -b carla https://github.com/CarlaUnreal/UnrealEngine.git
-    ```
+```
+git clone --depth 1 -b carla https://github.com/CarlaUnreal/UnrealEngine.git
+```
 
 17. Once the download is complete, navigate into the downloaded folder:
 
-    ```
-    cd UnrealEngine
-    ```
+```
+cd UnrealEngine
+```
 
 18. Run the setup script:
 
-    ```
-    Setup.bat
-    ```
+```
+Setup.bat
+```
 
 19. Once Setup.bat is finished, run:
 
-    ```
-    GenerateProjectFiles.bat
-    ```
+```
+GenerateProjectFiles.bat
+```
 
 20. Once complete, it is time to compile Unreal Engine. Open File Explorer, navigate to the `UnrealEngine` folder, and open the Visual Studio Solution file `UE4.sln`.
 
 21. Once the file is open in Visual Studio, change the build bar so that the following are displayed: **Development Editor**, **Win64**, and **UnrealBuildTool**.
 
-    ![VS Example](https://bicyclesimulator.onrender.com/assets/images/VS_Ex-15d787a98c8883a620bbc41199a11637.png)
+    [![VS Example](https://camo.githubusercontent.com/d5a3d16d7f847679d4491e42e9a4f6531cea824015c468fb8b6b82e12eab7c72/68747470733a2f2f62696379636c6573696d756c61746f722e6f6e72656e6465722e636f6d2f6173736574732f696d616765732f56535f45782d31356437383761393863383838336136323062626334313139396131313633372e706e67)](https://camo.githubusercontent.com/d5a3d16d7f847679d4491e42e9a4f6531cea824015c468fb8b6b82e12eab7c72/68747470733a2f2f62696379636c6573696d756c61746f722e6f6e72656e6465722e636f6d2f6173736574732f696d616765732f56535f45782d31356437383761393863383838336136323062626334313139396131313633372e706e67)
 
 22. Right-click on the Solution `UE4` in the Solution Explorer and select **Build**. The build will take some time depending on your hardware.
 
-    ![VS Solution](https://bicyclesimulator.onrender.com/assets/images/VS_Sol-a7046276557174b4d8be9833721bd118.png)
+    [![VS Solution](https://camo.githubusercontent.com/931c025a765068cee1a828704b807abca623191bf881e725b8310de950477aca/68747470733a2f2f62696379636c6573696d756c61746f722e6f6e72656e6465722e636f6d2f6173736574732f696d616765732f56535f536f6c2d61373034363237363535373137346234643862653938333337323162643131382e706e67)](https://camo.githubusercontent.com/931c025a765068cee1a828704b807abca623191bf881e725b8310de950477aca/68747470733a2f2f62696379636c6573696d756c61746f722e6f6e72656e6465722e636f6d2f6173736574732f696d616765732f56535f536f6c2d61373034363237363535373137346234643862653938333337323162643131382e706e67)
 
 23. Once the build is complete, verify it was successful by navigating to the Unreal Engine folder and launching `UE4Editor`:
 
-    ```
-    C:\UnrealEngine\Engine\Binaries\Win64
-    ```
+```
+C:\UnrealEngine\Engine\Binaries\Win64
+```
 
 24. Add the Unreal Engine path as a system environment variable. Go to **Advanced System Settings → Environment Variables → New**, then add:
 
-    - **Variable name:** `UE4_ROOT`
-    - **Variable value:** `C:\UnrealEngine` (or wherever you installed it)
+  - **Variable name:** `UE4_ROOT`
+  - **Variable value:** `C:\UnrealEngine` (or wherever you installed it)
 
 25. Now to build and download CARLA. In Command Prompt, navigate again to the root of your drive:
 
-    ```
-    cd C:
-    ```
+```
+cd C:
+```
 
 26. Clone the CARLA repository:
 
-    ```
-    git clone https://github.com/carla-simulator/carla
-    ```
+```
+git clone https://github.com/carla-simulator/carla
+```
 
     Or for a specific version (we recommend the most recent):
 
-    ```
-    git clone --branch 0.9.XX https://github.com/carla-simulator/carla
-    ```
+```
+git clone --branch 0.9.XX https://github.com/carla-simulator/carla
+```
 
 27. Navigate into the CARLA folder:
 
-    ```
-    cd carla
-    ```
+```
+cd carla
+```
 
 28. Run the update script to download the required assets. This will take some time:
 
-    ```
-    Update.bat
-    ```
+```
+Update.bat
+```
 
 29. Once complete, verify the download and unpacking were successful by checking the command line logs. If not, reinstall 7-Zip with the correct permissions and restart from step 25. Make sure to delete the CARLA folder before restarting.
 
@@ -199,42 +200,42 @@ The CARLA build depends on several other applications that need to be installed 
 
 31. Navigate to the CARLA folder:
 
-    ```
-    cd C:\carla
-    ```
+```
+cd C:\carla
+```
 
 32. Build the Python API:
 
-    ```
-    make PythonAPI
-    ```
+```
+make PythonAPI
+```
 
 33. This will take some time. Once complete, verify there are no error codes and that a `dist` folder was created at `\carla\PythonAPI\carla`. If an error is present, re-run the command from step 31.
 
 34. If errors continue to persist, you will need to start over from step 1. Check that all required software is installed correctly with full admin access. To update all Python packages, run this in PowerShell:
 
-    ```
-    .\pip freeze | %{$_.split('==')[0]} | %{pip install --upgrade $_}
-    ```
+```
+.\pip freeze | %{$_.split('==')[0]} | %{pip install --upgrade $_}
+```
 
     :::note
-    Make sure to include `.\` before `pip` as shown above, otherwise the command may not execute correctly.
-    :::
+Make sure to include `.\` before `pip` as shown above, otherwise the command may not execute correctly.
+:::
 
 35. If no errors are present, launch CARLA by entering this command in the x64 Command Prompt while in the CARLA folder:
 
-    ```
-    make launch
-    ```
+```
+make launch
+```
 
 36. This may take some time to launch Unreal Engine. Once launched, you have successfully built CARLA.
 
 37. We recommend running the included examples to verify everything works. Press Play on the first example world, then open a new Command Prompt, navigate to the examples folder, and run the traffic generation script:
 
-    ```
-    cd C:\carla\PythonAPI\examples
-    python generate_traffic.py
-    ```
+```
+cd C:\carla\PythonAPI\examples
+python generate_traffic.py
+```
 
 38. If you received a critical failure message, you will need to start over from step 1. Make sure to delete the CARLA folder and the UnrealEngine folder before starting over.
 

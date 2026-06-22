@@ -16,9 +16,9 @@ C++ is also good to have as it is the scripting language of Unreal Engine and wi
 
 As stated before, CARLA is a branch of Unreal Engine 4 and at its current state is unfinished, although at this stage it provides a somewhat ready-to-go virtual environment with weather, traffic, and other useful features. It also has many plugins, including connection to microscopic modelling software like SUMO or PTV VISSIM. Although it has many great features, it is still in an unfinished state, which may cause issues especially during installation. It is recommended to build CARLA on a fairly robust computer, as it is very compute-intensive compared to other software products. It is also important to have some computer literacy with command line and Python to make installation and troubleshooting easier. In the Computer Setup section of this guide you will find a guide on how to best build CARLA.
 
-[Computer Setup](https://bicyclesimulator.onrender.com/docs/Setup_and_Building_of_Simulator/Computer_Setup)
+[Computer Setup](https://github.com/buw-bicycle-traffic/TiptoP-bicycling-simulator-modules/blob/main/virtual_environment_module/Computer_Setup.md)
 
-![Carla Setup](https://bicyclesimulator.onrender.com/assets/images/CarlaExample2-86b561b5d2434b413fe931ec30d2db9b.jpg)
+[![Carla Setup](https://camo.githubusercontent.com/5f458d52e04e32c4c6e112410e154fc554e49e991561d5dd530c93a753158853/68747470733a2f2f62696379636c6573696d756c61746f722e6f6e72656e6465722e636f6d2f6173736574732f696d616765732f4361726c614578616d706c65322d38366235363162356432343334623431336665393331656333306432646239622e6a7067)](https://camo.githubusercontent.com/5f458d52e04e32c4c6e112410e154fc554e49e991561d5dd530c93a753158853/68747470733a2f2f62696379636c6573696d756c61746f722e6f6e72656e6465722e636f6d2f6173736574732f696d616765732f4361726c614578616d706c65322d38366235363162356432343334623431336665393331656333306432646239622e6a7067)
 
 ### SUMO / SUMOnity
 
@@ -44,7 +44,7 @@ RoadRunner is the recommended software for creating new maps for CARLA scenarios
 RoadRunner requires a paid MathWorks license. Most university institutions can obtain a free academic license. If using the SUMO/SUMOnity workflow instead of CARLA, RoadRunner is not required — road networks can be built entirely with the free tools described above.
 :::
 
-![RoadRunner](https://bicyclesimulator.onrender.com/assets/images/RoadrunnerExample-09fd3f71e566631f17a7393f257478cb.jpg)
+[![RoadRunner](https://camo.githubusercontent.com/87f39da73b26d1d65c99b5211a98732478d92e7a1b47f082f9582555b83bf835/68747470733a2f2f62696379636c6573696d756c61746f722e6f6e72656e6465722e636f6d2f6173736574732f696d616765732f526f616472756e6e65724578616d706c652d30396664336637316535363636333166313761373339336632353734373863622e6a7067)](https://camo.githubusercontent.com/87f39da73b26d1d65c99b5211a98732478d92e7a1b47f082f9582555b83bf835/68747470733a2f2f62696379636c6573696d756c61746f722e6f6e72656e6465722e636f6d2f6173736574732f696d616765732f526f616472756e6e65724578616d706c652d30396664336637316535363636333166313761373339336632353734373863622e6a7067)
 
 ### Free Alternatives for SUMO-based Workflows
 
