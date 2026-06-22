@@ -245,9 +245,11 @@ The screenshot ([Figure 9](#Figure_9)) from Prusa G-code Viewer shows the exact 
 - Minimizing support material in critical surface areas
 
 The g-code can be found under following file path:
-```
+
 CAD_and_print\\speed_sensor_1.0\\3D-print\\speed_measuring_V1.gcode
-```
+
+[G-Code Link](https://github.com/buw-bicycle-traffic/TiptoP-bicycling-simulator-modules/tree/main/pedalling_resistance_speed_sensor_hardware/CAD_and_print/speed_sensor_1.0/3D-print)
+
 # Software
 The software for the Arduino and the interface to the simulation computer is documented in a separate repository which can be found under following link:
 
