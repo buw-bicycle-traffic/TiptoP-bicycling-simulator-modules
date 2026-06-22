@@ -174,5 +174,4 @@ While the presented brake module has strong advantages in its compact design and
 - The signal is transferred as **analog** from brake to Arduino which may cause problems with the cable getting longer
 	- An analog to digital converter directly on the brake module would be ideal. 
 - When pulling the lever the **increase of pressure over lever angle is very abrupt**. Once the adjustment screw in the `pressure cylinder (2)` hits the `load cell (7)` the increase in pressure is very steep while the lever angle does not increase much.  
-	- A pressure spring between adjustment screw and `load cell (7)` would be very useful to improve the realism of the haptic feel. 
-
+	- A pressure spring between adjustment screw and `load cell (7)` would be very useful to improve the realism of the haptic feel.
