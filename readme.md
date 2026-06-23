@@ -32,8 +32,8 @@ This section gives a closer look at the three hardware modules currently documen
 
 ---
 
-### 🚲 Speed Sensor Module
-📁 [pedalling_resistance_speed_sensor_hardware](https://github.com/buw-bicycle-traffic/TiptoP-bicycling-simulator-modules/tree/main/pedalling_resistance_speed_sensor_hardware)
+### Speed Sensor Module
+[pedalling_resistance_speed_sensor_hardware](https://github.com/buw-bicycle-traffic/TiptoP-bicycling-simulator-modules/tree/main/pedalling_resistance_speed_sensor_hardware)
 
 The Wahoo Kickr Bike only outputs speed at 1 Hz over Bluetooth, which is far too slow for a responsive simulation. This module fixes that. A friction wheel is pressed against the Kickr's flywheel using a spring loaded pivoting arm, and an optical incremental encoder with 1000 counts per revolution picks up the rotation. With the gear ratio of the coupling mechanism, this results in an effective resolution of 20,000 counts per crank revolution and update rates between 10,000 and 30,000 Hz depending on cadence. The signal goes straight to the simulation PC via wired Ethernet, cutting latency to near zero.
 
@@ -41,8 +41,8 @@ The documentation starts with a [technical overview](https://github.com/buw-bicy
 
 ---
 
-### 🎯 Steering Sensor Module
-📁 [handlebar_steering_steering_angle_hardware](https://github.com/buw-bicycle-traffic/TiptoP-bicycling-simulator-modules/tree/main/handlebar_steering_steering_angle_hardware)
+### Steering Sensor Module
+[handlebar_steering_steering_angle_hardware](https://github.com/buw-bicycle-traffic/TiptoP-bicycling-simulator-modules/tree/main/handlebar_steering_steering_angle_hardware)
 
 Accurate steering is one of the harder things to get right in a bicycling simulator. This module integrates a 10-bit absolute rotary encoder (Bourns EMS22A50) directly into the handlebar stem assembly. Because it is an absolute encoder, it always knows its position from the moment it powers on, no homing or recalibration needed. The encoder is housed in a custom 3D printed enclosure that mounts cleanly to the steering column, and a torsion spring keeps the handlebars centered when not in use.
 
@@ -52,8 +52,8 @@ The documentation covers the full [system integration and SPI wiring](https://gi
 
 ---
 
-### 🛑 Brake Module
-📁 [brake_hand_brake_hardware](https://github.com/buw-bicycle-traffic/TiptoP-bicycling-simulator-modules/tree/main/brake_hand_brake_hardware)
+### Brake Module
+[brake_hand_brake_hardware](https://github.com/buw-bicycle-traffic/TiptoP-bicycling-simulator-modules/tree/main/brake_hand_brake_hardware)
 
 This module turns a standard bicycle brake lever into a force sensor. A miniature load cell is embedded inside a custom 3D printed housing that screws directly into the brake lever in place of the cable adjuster. When the rider squeezes the lever, the brake cable pulls on a pressure cylinder which pushes against the load cell. The signal is amplified by a Burr-Brown INA125 instrumentation amplifier, read by the Arduino, and sent to the simulation PC via UDP.
 
@@ -63,7 +63,7 @@ The documentation includes the [technical overview](https://github.com/buw-bicyc
 
 ---
 
-> 📬 For questions about any of the modules, reach out via this repository or at radverkehr@uni-wuppertal.de.
+> For questions about any of the modules, reach out via this repository or at radverkehr@uni-wuppertal.de.
 
 ---
 
