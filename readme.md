@@ -20,7 +20,7 @@ Currently, documentation for following modules is available on this repository:
 
 ## Module Documentation Preview
 
-> 🚧 **Work in Progress** — This section is still being expanded. Content and formatting may change.
+> **Work in Progress** — This section is still being expanded. Content and formatting may change.
 
 ![Status](https://img.shields.io/badge/status-work%20in%20progress-yellow)
 ![Version](https://img.shields.io/badge/version-1.0-blue)
@@ -64,6 +64,14 @@ The documentation includes the [technical overview](https://github.com/buw-bicyc
 ---
 
 > For questions about any of the modules, reach out via this repository or at radverkehr@uni-wuppertal.de.
+
+---
+
+## Virtual Environment Module
+
+Documentation for setting up and creating virtual environments for the simulator is maintained separately. It covers software installation, computer setup, and a full walkthrough for building custom scenarios from real-world map data using CARLA and RoadRunner, as well as an alternative workflow based on SUMO and Unity.
+
+See the [Virtual Environment Module README](https://github.com/buw-bicycle-traffic/TiptoP-bicycling-simulator-modules/blob/main/virtual_environment_module/README.md) for details.
 
 ---
 
